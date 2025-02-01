@@ -75,35 +75,37 @@ main {
     transform: translateY(-5px);
 }
 
-.more-button {
+.sns {
+    margin-top: 40px;
+}
+
+.sns h2 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+.sns-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.sns-button {
     display: inline-block;
-    margin-top: 20px;
-    padding: 15px 25px;
-    background: #3498db;
+    padding: 12px 20px;
     color: white;
-    text-decoration: none;
-    border-radius: 5px;
     font-size: 1.2em;
-    transition: background 0.3s;
-}
-
-.more-button:hover {
-    background: #2980b9;
-}
-
-.line-button {
-    display: inline-block;
-    background-color: #06C755;
-    color: white;
-    padding: 15px 25px;
-    text-decoration: none;
     border-radius: 5px;
-    font-weight: bold;
-    font-size: 1.2em;
+    text-decoration: none;
+    transition: background 0.3s, transform 0.2s;
 }
 
-.line-button:hover {
-    background: #04A344;
+.instagram { background: #E4405F; }
+.youtube { background: #FF0000; }
+.tiktok { background: #000000; }
+
+.sns-button:hover {
+    transform: scale(1.1);
 }
 
 footer {
@@ -111,4 +113,5 @@ footer {
     color: white;
     text-align: center;
     padding: 20px 0;
+    margin-top: 50px;
 }
