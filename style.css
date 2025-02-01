@@ -10,45 +10,40 @@ body {
 }
 
 header {
-    background: #222;
+    background: linear-gradient(to right, #2c3e50, #4ca1af);
     color: white;
-    padding: 20px 0;
+    padding: 30px 0;
     text-align: center;
 }
 
 h1 {
     font-size: 2.5em;
     margin: 0;
+    font-weight: bold;
 }
 
 header p {
     font-size: 1.2em;
-    margin-top: 5px;
+    margin-top: 10px;
 }
 
 main {
     padding: 40px 20px;
 }
 
-h2 {
-    color: #222;
-    font-size: 2em;
-    margin-bottom: 20px;
-}
-
-.services {
+.service-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    gap: 20px;
 }
 
 .service-box {
     background: white;
     padding: 20px;
-    margin: 10px;
     border-radius: 10px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    width: 280px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    width: 300px;
     transition: transform 0.3s ease-in-out;
 }
 
@@ -56,31 +51,20 @@ h2 {
     transform: translateY(-5px);
 }
 
-h3 {
-    color: #555;
+.more-button, .back-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 15px 25px;
+    background: #3498db;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    transition: background 0.3s;
 }
 
-.mission {
-    margin: 40px 0;
-    padding: 30px;
-    background: #ddd;
-    border-radius: 10px;
-}
-
-.mission img {
-    max-width: 80%;
-    height: auto;
-    border-radius: 10px;
-}
-
-.mission p {
-    font-size: 1.3em;
-    font-weight: bold;
-    margin-top: 10px;
-}
-
-.contact {
-    margin-top: 40px;
+.more-button:hover, .back-button:hover {
+    background: #2980b9;
 }
 
 .line-button {
@@ -92,7 +76,6 @@ h3 {
     border-radius: 5px;
     font-weight: bold;
     font-size: 1.2em;
-    transition: background 0.3s;
 }
 
 .line-button:hover {
@@ -104,5 +87,4 @@ footer {
     color: white;
     text-align: center;
     padding: 20px 0;
-    margin-top: 50px;
 }
