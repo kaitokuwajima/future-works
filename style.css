@@ -26,6 +26,46 @@ main {
     padding: 40px 20px;
 }
 
+/* ミッション画像のサイズ調整 */
+.mission {
+    position: relative;
+    max-width: 900px;
+    margin: 40px auto;
+    text-align: center;
+}
+
+.mission img {
+    width: 100%;
+    height: auto;
+    max-height: 350px;
+    object-fit: cover;
+    border-radius: 10px;
+    opacity: 0.85;
+}
+
+.mission-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 75%;
+}
+
+@media screen and (max-width: 768px) {
+    .mission-text {
+        font-size: 1.2em;
+        padding: 8px 15px;
+        width: 85%;
+    }
+}
+
 /* サービスボックスのデザイン */
 .service-container {
     display: flex;
@@ -39,7 +79,7 @@ main {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
-    width: 300px;
+    width: 280px;
     text-align: left;
     border: 2px solid #3498db;
     transition: transform 0.3s ease-in-out;
@@ -58,8 +98,8 @@ main {
 }
 
 .profile-img {
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
     object-fit: cover;
     margin-bottom: 15px;
