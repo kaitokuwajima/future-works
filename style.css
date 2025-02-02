@@ -56,34 +56,59 @@ main {
     width: 80%;
 }
 
-@media screen and (max-width: 768px) {
-    .mission-text {
-        font-size: 1.2em;
-        padding: 5px 10px;
-        width: 90%;
-        top: 55%;
-    }
-}
-
 .service-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    gap: 15px;
+}
+
+.service-button {
+    display: block;
+    background: #3498db;
+    color: white;
+    padding: 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    transition: background 0.3s, transform 0.2s;
+    width: 280px;
+    text-align: center;
+}
+
+.service-button:hover {
+    background: #2980b9;
+    transform: scale(1.05);
+}
+
+.profile {
+    margin-top: 50px;
+    padding: 30px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.profile-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     gap: 20px;
 }
 
-.service-box {
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
-    width: 300px;
-    text-align: left;
-    transition: transform 0.3s ease-in-out;
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
 }
 
-.service-box:hover {
-    transform: translateY(-5px);
+.profile-text {
+    font-size: 1.2em;
 }
 
 .sns {
