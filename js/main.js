@@ -109,17 +109,10 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- Contact form handler ---
     const contactForm = document.getElementById('contactForm');
 
-    contactForm.addEventListener('submit', (e) => {
-        e.preventDefault();
-
-        const formData = new FormData(contactForm);
-        const data = Object.fromEntries(formData.entries());
-
-        // TODO: バックエンド連携時にここを変更
-        // 現在はデモ用のアラート表示
-        console.log('Form submitted:', data);
-        alert('お問い合わせありがとうございます。\n内容を確認の上、折り返しご連絡いたします。');
-        contactForm.reset();
+    contactForm.addEventListener('submit', () => {
+        const btn = contactForm.querySelector('.submit-button');
+        btn.textContent = '送信中...';
+        btn.disabled = true;
     });
 
     // --- Service cards stagger animation ---
