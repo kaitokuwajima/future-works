@@ -3,22 +3,303 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FutureWorks</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Future Works | AIで"働く"を再定義する</title>
+    <meta name="description" content="Future WorksはAIを活用した業務効率化を専門とし、人がより価値のあることに集中できる社会を目指します。">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <h1>FutureWorks</h1>
-    </header>
-    <main>
-        <section id="about">
-            <h2>自己紹介</h2>
-            <img src="https://kaitokuwajima.github.io/my-order-site/画像を拡大" alt="桑島海斗の写真" class="profile-photo" />
-            <p>現役の理学療法士。AIやパソコンでの効率化が趣味です。</p>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2025 FutureWorks</p>
+    <!-- ナビゲーション -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">Future Works</a>
+            <button class="nav-toggle" id="navToggle" aria-label="メニュー">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#hero" class="nav-link">TOP</a></li>
+                <li><a href="#about" class="nav-link">会社概要</a></li>
+                <li><a href="#vision" class="nav-link">ビジョン</a></li>
+                <li><a href="#services" class="nav-link">事業内容</a></li>
+                <li><a href="#value" class="nav-link">提供価値</a></li>
+                <li><a href="#contact" class="nav-link">お問い合わせ</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ヒーローセクション -->
+    <section class="hero" id="hero">
+        <div class="hero-particles" id="heroParticles"></div>
+        <div class="hero-content">
+            <p class="hero-subtitle fade-in">Future Works</p>
+            <h1 class="hero-title fade-in">AIで<span class="highlight">"働く"</span>を再定義する</h1>
+            <p class="hero-description fade-in">AIによって時間を生み出し、<br>人がより価値のあることに集中できる社会へ。</p>
+            <a href="#about" class="hero-cta fade-in">詳しく見る</a>
+        </div>
+        <div class="hero-scroll">
+            <span>Scroll</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- 会社概要 -->
+    <section class="section about" id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">About</span>
+                <h2 class="section-title">会社概要</h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-image reveal-left">
+                    <!-- 後から差し替え可能なダミー画像 -->
+                    <div class="placeholder-image about-placeholder">
+                        <div class="placeholder-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-text reveal-right">
+                    <h3>AIを活用した業務効率化の専門家</h3>
+                    <p>
+                        これまで多くの現場で、「人がやらなくてもいい作業」に多くの時間が使われている現実を見てきました。
+                    </p>
+                    <p>
+                        AIを使えば、それらの作業は自動化できます。AIによって時間を生み出し、人がより価値のあることに集中できる社会を作ることが私たちの目的です。
+                    </p>
+                    <div class="company-info">
+                        <div class="info-item">
+                            <span class="info-label">会社名</span>
+                            <span class="info-value">Future Works</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">代表者</span>
+                            <span class="info-value">桑島 海斗</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ビジョン -->
+    <section class="section vision" id="vision">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Vision</span>
+                <h2 class="section-title">ビジョン</h2>
+            </div>
+            <div class="vision-content reveal-up">
+                <div class="vision-card">
+                    <div class="vision-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                        </svg>
+                    </div>
+                    <p class="vision-text">
+                        日本は人口減少が進んでおり、今後はAIの活用が不可欠になります。<br>
+                        人手不足の時代において、AIを使いこなすことが企業の成長に直結します。
+                    </p>
+                    <div class="vision-divider"></div>
+                    <p class="vision-statement">
+                        AIによって生まれた時間で、<br>
+                        <strong>人がより豊かで幸せに生きられる社会を実現する。</strong>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 事業内容 -->
+    <section class="section services" id="services">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Services</span>
+                <h2 class="section-title">事業内容</h2>
+            </div>
+            <div class="services-grid">
+                <div class="service-card reveal-up">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                        </svg>
+                    </div>
+                    <h3>AI業務効率化</h3>
+                    <p>AIを活用した業務効率化の提案・導入をサポートします。現場の課題を分析し、最適なAIソリューションを提供します。</p>
+                </div>
+                <div class="service-card reveal-up">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"/>
+                        </svg>
+                    </div>
+                    <h3>アプリ開発</h3>
+                    <p>ビジネスの課題を解決するアプリケーションを開発。使いやすさと機能性を両立したソリューションを提供します。</p>
+                </div>
+                <div class="service-card reveal-up">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/>
+                        </svg>
+                    </div>
+                    <h3>GAS開発</h3>
+                    <p>Google Apps Scriptを活用した業務自動化。スプレッドシートやGmailなど、Google Workspaceの自動化を実現します。</p>
+                </div>
+                <div class="service-card reveal-up">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"/>
+                        </svg>
+                    </div>
+                    <h3>ホームページ制作</h3>
+                    <p>企業の魅力を最大限に引き出すWebサイトを制作。レスポンシブ対応で、あらゆるデバイスに最適化します。</p>
+                </div>
+                <div class="service-card reveal-up">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"/>
+                        </svg>
+                    </div>
+                    <h3>動画制作</h3>
+                    <p>プロモーション動画やYouTubeコンテンツの制作。AIツールも活用し、高品質な映像をお届けします。</p>
+                </div>
+                <div class="service-card reveal-up">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3"/>
+                        </svg>
+                    </div>
+                    <h3>音楽制作</h3>
+                    <p>BGMやジングルなど、用途に合わせた音楽制作。映像やコンテンツの魅力を引き上げます。</p>
+                </div>
+                <div class="service-card reveal-up">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"/>
+                        </svg>
+                    </div>
+                    <h3>サポート・指導</h3>
+                    <p>訪問サポートやZoomなどのオンライン指導に対応。お客様のペースに合わせた丁寧なサポートを提供します。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 提供価値 -->
+    <section class="section value" id="value">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Value</span>
+                <h2 class="section-title">提供価値</h2>
+            </div>
+            <div class="value-grid">
+                <div class="value-item reveal-up">
+                    <div class="value-number">01</div>
+                    <h3>繰り返し作業の自動化</h3>
+                    <p>日々の定型業務をAIで自動化し、人的リソースを解放します。</p>
+                </div>
+                <div class="value-item reveal-up">
+                    <div class="value-number">02</div>
+                    <h3>業務効率の最大化</h3>
+                    <p>業務プロセスを分析し、AIによる最適化で効率を最大限に引き上げます。</p>
+                </div>
+                <div class="value-item reveal-up">
+                    <div class="value-number">03</div>
+                    <h3>作業時間の削減</h3>
+                    <p>自動化とプロセス改善により、大幅な作業時間の削減を実現します。</p>
+                </div>
+                <div class="value-item reveal-up">
+                    <div class="value-number">04</div>
+                    <h3>本来の仕事に集中</h3>
+                    <p>人が本来やるべき創造的な仕事に集中できる環境を構築します。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- YouTube -->
+    <section class="section youtube" id="youtube">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">YouTube</span>
+                <h2 class="section-title">情報発信</h2>
+            </div>
+            <div class="youtube-content reveal-up">
+                <p class="youtube-description">YouTubeチャンネルでAI活用や業務効率化に関する情報を発信しています。</p>
+                <a href="https://youtube.com/channel/UCRaF0SzZ-9pcbwL2-Ha8uhw?si=--FiWrBruBXHMgnN" target="_blank" rel="noopener noreferrer" class="youtube-button">
+                    <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+                        <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814z"/>
+                        <path d="M9.545 15.568V8.432L15.818 12l-6.273 3.568z" fill="#fff"/>
+                    </svg>
+                    YouTubeチャンネルを見る
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- お問い合わせ -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Contact</span>
+                <h2 class="section-title">お問い合わせ</h2>
+            </div>
+            <div class="contact-content reveal-up">
+                <p class="contact-description">
+                    AIを活用した業務効率化にご興味がありましたら、<br>
+                    お気軽にお問い合わせください。
+                </p>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">お名前 <span class="required">*</span></label>
+                        <input type="text" id="name" name="name" required placeholder="山田 太郎">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">メールアドレス <span class="required">*</span></label>
+                        <input type="email" id="email" name="email" required placeholder="example@email.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="company">会社名</label>
+                        <input type="text" id="company" name="company" placeholder="株式会社〇〇">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">お問い合わせ内容 <span class="required">*</span></label>
+                        <textarea id="message" name="message" rows="5" required placeholder="お気軽にご相談ください"></textarea>
+                    </div>
+                    <button type="submit" class="submit-button">送信する</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- フッター -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="footer-logo">Future Works</span>
+                    <p class="footer-tagline">AIで"働く"を再定義する</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#hero">TOP</a>
+                    <a href="#about">会社概要</a>
+                    <a href="#vision">ビジョン</a>
+                    <a href="#services">事業内容</a>
+                    <a href="#value">提供価値</a>
+                    <a href="#contact">お問い合わせ</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Future Works. All Rights Reserved.</p>
+            </div>
+        </div>
     </footer>
+
+    <script src="js/main.js"></script>
 </body>
 </html>
