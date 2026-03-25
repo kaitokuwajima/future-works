@@ -769,6 +769,24 @@ img {
     color: var(--color-accent);
 }
 
+.footer-legal {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+    margin-top: 8px;
+}
+
+.footer-legal a {
+    font-size: 0.78rem;
+    color: var(--color-text-muted);
+    opacity: 0.7;
+}
+
+.footer-legal a:hover {
+    color: var(--color-accent);
+    opacity: 1;
+}
+
 .footer-bottom {
     padding: 24px 0;
     text-align: center;
@@ -946,4 +964,92 @@ img {
     .hero-title {
         font-size: 1.8rem;
     }
+}
+
+/* --- Legal Pages --- */
+.legal-page {
+    padding-top: calc(var(--nav-height) + 60px);
+    padding-bottom: 80px;
+    min-height: 100vh;
+    background: var(--color-primary);
+}
+
+.legal-page .container {
+    max-width: 800px;
+}
+
+.legal-page h1 {
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    color: var(--color-white);
+    margin-bottom: 12px;
+    letter-spacing: 0.04em;
+}
+
+.legal-page .legal-updated {
+    font-size: 0.8rem;
+    color: var(--color-text-muted);
+    margin-bottom: 48px;
+}
+
+.legal-page h2 {
+    font-size: 1.1rem;
+    color: var(--color-accent);
+    margin-top: 40px;
+    margin-bottom: 16px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--color-border);
+}
+
+.legal-page p,
+.legal-page li {
+    font-size: 0.9rem;
+    color: var(--color-text-muted);
+    line-height: 1.9;
+    margin-bottom: 12px;
+}
+
+.legal-page ul {
+    padding-left: 1.5em;
+    margin-bottom: 16px;
+}
+
+.legal-page table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 24px;
+}
+
+.legal-page th,
+.legal-page td {
+    padding: 12px 16px;
+    border: 1px solid var(--color-border);
+    font-size: 0.88rem;
+    text-align: left;
+}
+
+.legal-page th {
+    background: var(--color-surface);
+    color: var(--color-accent);
+    font-weight: 500;
+    min-width: 120px;
+}
+
+.legal-page td {
+    color: var(--color-text-muted);
+}
+
+.legal-back {
+    display: inline-block;
+    margin-top: 40px;
+    padding: 12px 32px;
+    border: 1px solid var(--color-accent);
+    color: var(--color-accent);
+    font-size: 0.85rem;
+    border-radius: 4px;
+    transition: var(--transition);
+}
+
+.legal-back:hover {
+    background: var(--color-accent);
+    color: var(--color-primary);
 }
