@@ -543,6 +543,17 @@ img {
     opacity: 0.95;
 }
 
+.service-cta-secondary {
+    background: transparent;
+    color: var(--color-accent);
+    border: 1px solid rgba(0, 212, 255, 0.5);
+}
+
+.service-cta-secondary:hover {
+    background: rgba(0, 212, 255, 0.1);
+    box-shadow: 0 6px 20px rgba(0, 212, 255, 0.2);
+}
+
 /* --- Value Section --- */
 .value {
     background: linear-gradient(180deg, var(--color-secondary) 0%, var(--color-primary) 100%);
