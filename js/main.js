@@ -121,8 +121,52 @@ document.addEventListener('DOMContentLoaded', () => {
         card.style.transitionDelay = `${index * 0.1}s`;
     });
 
-    const valueItems = document.querySelectorAll('.value-item.reveal-up');
-    valueItems.forEach((item, index) => {
-        item.style.transitionDelay = `${index * 0.15}s`;
+    // --- Value cards: stagger, interactive glow, count-up ---
+    const valueCards = document.querySelectorAll('.value-card');
+    valueCards.forEach((card, index) => {
+        card.style.transitionDelay = `${index * 0.12}s`;
+
+        card.addEventListener('mousemove', (e) => {
+            const rect = card.getBoundingClientRect();
+            const mx = ((e.clientX - rect.left) / rect.width) * 100;
+            const my = ((e.clientY - rect.top) / rect.height) * 100;
+            card.style.setProperty('--mx', `${mx}%`);
+            card.style.setProperty('--my', `${my}%`);
+        });
+
+        card.addEventListener('mouseleave', () => {
+            card.style.setProperty('--mx', `50%`);
+            card.style.setProperty('--my', `0%`);
+        });
     });
+
+    const animateCount = (el) => {
+        const target = parseInt(el.dataset.target, 10);
+        const suffix = el.dataset.suffix || '';
+        if (Number.isNaN(target)) return;
+
+        const duration = 1600;
+        const startTime = performance.now();
+
+        const tick = (now) => {
+            const progress = Math.min((now - startTime) / duration, 1);
+            const eased = 1 - Math.pow(1 - progress, 3);
+            const current = Math.round(target * eased);
+            el.textContent = `${current}${suffix}`;
+            if (progress < 1) requestAnimationFrame(tick);
+        };
+
+        requestAnimationFrame(tick);
+    };
+
+    const statObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                animateCount(entry.target);
+                statObserver.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.5 });
+
+    document.querySelectorAll('.value-stat-num[data-target]').forEach(el => statObserver.observe(el));
 });
