@@ -448,6 +448,8 @@ img {
 }
 
 .service-card {
+    display: flex;
+    flex-direction: column;
     padding: 36px 28px;
     background: rgba(10, 22, 40, 0.6);
     border: 1px solid var(--color-border);
@@ -455,6 +457,14 @@ img {
     transition: var(--transition);
     position: relative;
     overflow: hidden;
+}
+
+.service-card > p {
+    flex-grow: 1;
+}
+
+.service-card .service-cta {
+    align-self: flex-start;
 }
 
 .service-card::before {
@@ -511,6 +521,33 @@ img {
     opacity: 1;
 }
 
+.service-card.highlight {
+    background: linear-gradient(160deg, rgba(255, 107, 107, 0.14) 0%, rgba(0, 212, 255, 0.08) 40%, rgba(10, 22, 40, 0.7) 100%);
+    border-color: rgba(255, 122, 89, 0.5);
+    box-shadow: 0 0 0 1px rgba(255, 122, 89, 0.25), 0 18px 50px -18px rgba(255, 107, 107, 0.35);
+    animation: highlightPulse 3.2s ease-in-out infinite;
+}
+
+.service-card.highlight::before {
+    opacity: 1;
+    background: linear-gradient(90deg, transparent, #ff7a59, #ffb84d, transparent);
+}
+
+.service-card.highlight:hover {
+    transform: translateY(-6px);
+    border-color: rgba(255, 122, 89, 0.75);
+    box-shadow: 0 0 0 1px rgba(255, 122, 89, 0.45), 0 22px 58px -16px rgba(255, 107, 107, 0.55);
+}
+
+@keyframes highlightPulse {
+    0%, 100% {
+        box-shadow: 0 0 0 1px rgba(255, 122, 89, 0.25), 0 18px 50px -18px rgba(255, 107, 107, 0.35);
+    }
+    50% {
+        box-shadow: 0 0 0 1px rgba(255, 122, 89, 0.45), 0 22px 60px -14px rgba(255, 107, 107, 0.55);
+    }
+}
+
 .service-badge {
     position: absolute;
     top: 16px;
@@ -522,6 +559,15 @@ img {
     letter-spacing: 0.05em;
     padding: 4px 10px;
     border-radius: 999px;
+    z-index: 2;
+}
+
+.service-badge-hot {
+    background: linear-gradient(135deg, #ff4d6d 0%, #ff9a6b 100%);
+    color: #ffffff;
+    box-shadow: 0 4px 16px rgba(255, 77, 109, 0.5);
+    font-size: 0.7rem;
+    padding: 5px 12px;
 }
 
 .service-cta {
