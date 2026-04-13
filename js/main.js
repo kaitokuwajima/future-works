@@ -1,5 +1,5 @@
 /* =============================================
-   Future Works - Main JavaScript
+   FRENVOX - Main JavaScript
    ============================================= */
 
 document.addEventListener('DOMContentLoaded', () => {
