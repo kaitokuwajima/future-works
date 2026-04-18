@@ -10,8 +10,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav class="navbar scrolled" id="navbar">
-        <div class="nav-container">
+    <nav class="nav scrolled" id="nav">
+        <div class="nav-inner">
             <a href="index.html" class="nav-logo">FRENVOX</a>
         </div>
     </nav>
@@ -19,16 +19,16 @@
     <div class="legal-page">
         <div class="container">
             <h1>プライバシーポリシー</h1>
-            <p class="legal-updated">最終更新日：2025年3月</p>
+            <p class="legal-updated">最終更新日：2025年4月</p>
 
-            <p>FRENVOX（以下「当社」）は、お客様の個人情報の保護を重要な責務と考え、以下のとおりプライバシーポリシーを定めます。</p>
+            <p>FRENVOX（以下「当社」）は、お客様の個人情報の保護を重要な責務と考え、個人情報の保護に関する法律（個人情報保護法）に基づき、以下のとおりプライバシーポリシーを定めます。</p>
 
             <h2>1. 収集する情報</h2>
             <p>当社は、以下の情報を収集することがあります。</p>
             <ul>
                 <li>お名前</li>
                 <li>メールアドレス</li>
-                <li>会社名</li>
+                <li>会社名・施設名</li>
                 <li>お問い合わせ内容</li>
                 <li>お支払いに必要な情報（クレジットカード情報はStripe社が安全に管理し、当社が直接保管することはありません）</li>
             </ul>
@@ -47,23 +47,28 @@
             <ul>
                 <li>お客様の同意がある場合</li>
                 <li>法令に基づく場合</li>
-                <li>サービス提供に必要な業務委託先（決済代行会社 Stripe 等）に対して、必要最小限の範囲で共有する場合</li>
+                <li>サービス提供に必要な業務委託先に対して、必要最小限の範囲で共有する場合</li>
             </ul>
 
-            <h2>4. 決済情報の取り扱い</h2>
-            <p>当社のオンライン決済はStripe, Inc.を通じて処理されます。クレジットカード情報は当社のサーバーを経由せず、Stripeが国際的なセキュリティ基準（PCI DSS）に準拠して安全に管理します。Stripeのプライバシーポリシーについてはstripe.com/privacyをご確認ください。</p>
+            <h2>4. 外部サービスの利用</h2>
+            <p>当社は、以下の外部サービスを利用しています。各サービスのプライバシーポリシーもあわせてご確認ください。</p>
+            <ul>
+                <li><strong>FormSubmit.co</strong>（お問い合わせフォームの送信処理）：お問い合わせフォームに入力された情報は、FormSubmit.coを経由して当社に送信されます。</li>
+                <li><strong>Stripe, Inc.</strong>（オンライン決済処理）：クレジットカード情報は当社のサーバーを経由せず、Stripeが国際的なセキュリティ基準（PCI DSS）に準拠して安全に管理します。</li>
+                <li><strong>Google Forms</strong>（相談予約の受付）：ご予約時に入力された情報はGoogleが管理するサーバーに保存されます。</li>
+            </ul>
 
             <h2>5. 情報の安全管理</h2>
             <p>当社は、個人情報の漏えい、滅失、き損を防止するため、適切な安全管理措置を講じます。</p>
 
             <h2>6. お客様の権利</h2>
-            <p>お客様は、当社が保有する個人情報について、開示・訂正・削除を求めることができます。ご希望の場合は、下記の連絡先までお問い合わせください。</p>
+            <p>お客様は、当社が保有する個人情報について、開示・訂正・利用停止・削除を求めることができます。ご希望の場合は、下記の連絡先までお問い合わせください。当社は、ご本人確認のうえ、合理的な期間内に対応いたします。</p>
 
             <h2>7. Cookieの使用</h2>
-            <p>当社のウェブサイトでは、利便性向上やアクセス解析のためにCookieを使用する場合があります。ブラウザの設定によりCookieの受け取りを拒否することも可能ですが、一部の機能が制限される場合があります。</p>
+            <p>当社のウェブサイトでは、現在Cookieを積極的に使用しておりません。ただし、外部サービス（FormSubmit.co等）が技術的にCookieを使用する場合があります。ブラウザの設定によりCookieの受け取りを拒否することも可能です。</p>
 
             <h2>8. ポリシーの変更</h2>
-            <p>当社は、必要に応じて本ポリシーを変更することがあります。変更後のポリシーは、当ウェブサイトに掲載した時点で効力を生じます。</p>
+            <p>当社は、法令の改正やサービス内容の変更に伴い、本ポリシーを変更することがあります。変更後のポリシーは、当ウェブサイトに掲載した時点で効力を生じます。重要な変更がある場合は、ウェブサイト上でお知らせいたします。</p>
 
             <h2>9. お問い合わせ先</h2>
             <p>個人情報の取り扱いに関するお問い合わせは、以下までご連絡ください。</p>
@@ -72,15 +77,13 @@
                 メール：kaito.k0626@gmail.com
             </p>
 
-            <a href="index.html" class="legal-back">トップページに戻る</a>
+            <a href="index.html" class="legal-back">← トップページに戻る</a>
         </div>
     </div>
 
     <footer class="footer">
         <div class="container">
-            <div class="footer-bottom">
-                <p>&copy; 2025 FRENVOX. All Rights Reserved.</p>
-            </div>
+            <p class="footer-copy">&copy; 2025 FRENVOX</p>
         </div>
     </footer>
 </body>

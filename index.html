@@ -3,416 +3,400 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FRENVOX | AIで"働く"を再定義する</title>
-    <meta name="description" content="FRENVOXはAIを活用した業務効率化を専門とし、人がより価値のあることに集中できる社会を目指します。">
+    <title>FRENVOX | 理学療法士 × AI</title>
+    <meta name="description" content="理学療法士の臨床経験とAI技術で、リハビリ・医療・介護の現場を変える。動作解析AI、記録業務の自動化、ホームページ制作。香川県高松市。">
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- ナビゲーション -->
-    <nav class="navbar" id="navbar">
-        <div class="nav-container">
-            <a href="#hero" class="nav-logo">FRENVOX</a>
+
+    <nav class="nav" id="nav">
+        <div class="nav-inner">
+            <a href="#" class="nav-logo">FRENVOX</a>
             <button class="nav-toggle" id="navToggle" aria-label="メニュー">
-                <span></span>
-                <span></span>
-                <span></span>
+                <span></span><span></span><span></span>
             </button>
             <ul class="nav-menu" id="navMenu">
-                <li><a href="#hero" class="nav-link">TOP</a></li>
-                <li><a href="#about" class="nav-link">会社概要</a></li>
-                <li><a href="#vision" class="nav-link">ビジョン</a></li>
-                <li><a href="#services" class="nav-link">事業内容</a></li>
-                <li><a href="#value" class="nav-link">提供価値</a></li>
-                <li><a href="#contact" class="nav-link">お問い合わせ</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#results" class="nav-link">効果</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#faq" class="nav-link">FAQ</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
         </div>
     </nav>
 
-    <!-- ヒーローセクション -->
+    <!-- Hero -->
     <section class="hero" id="hero">
-        <div class="hero-particles" id="heroParticles"></div>
-        <div class="hero-content">
-            <p class="hero-subtitle fade-in">FRENVOX</p>
-            <h1 class="hero-title fade-in">AIで<span class="highlight">"働く"</span>を再定義する</h1>
-            <p class="hero-description fade-in">AIによって時間を生み出し、<br>人がより価値のあることに集中できる社会へ。</p>
-            <a href="#about" class="hero-cta fade-in">詳しく見る</a>
-        </div>
-        <div class="hero-scroll">
-            <span>Scroll</span>
-            <div class="scroll-line"></div>
+        <div class="hero-inner">
+            <p class="hero-tag">Physical Therapist &times; AI Engineer</p>
+            <h1 class="hero-title">記録に追われる時間を、<br>患者と向き合う時間に。</h1>
+            <p class="hero-lead">スマホ2台で動作解析。記録業務をAIが自動化。<br>理学療法士が開発した、現場のためのAIソリューション。</p>
+            <div class="hero-actions">
+                <a href="https://forms.gle/h861AAMSrCgoVaNu7" target="_blank" rel="noopener noreferrer" class="btn btn-fill">無料相談を予約する（30分）</a>
+                <a href="#results" class="btn">導入効果を見る</a>
+            </div>
         </div>
     </section>
 
-    <!-- 会社概要 -->
-    <section class="section about" id="about">
+    <!-- About -->
+    <section class="section" id="about">
         <div class="container">
-            <div class="section-header">
-                <span class="section-label">About</span>
-                <h2 class="section-title">会社概要</h2>
-            </div>
-            <div class="about-grid">
-                <div class="about-image reveal-left">
-                    <img src="images/profile.png" alt="代表 桑島海斗" class="profile-photo">
+            <div class="about">
+                <div class="about-photo fade-in">
+                    <img src="images/profile.png" alt="桑島 海斗" width="400" height="400" loading="lazy">
                 </div>
-                <div class="about-text reveal-right">
-                    <h3>AIを活用した業務効率化の専門家</h3>
-                    <p>
-                        これまで多くの現場で、「人がやらなくてもいい作業」に多くの時間が使われている現実を見てきました。
-                    </p>
-                    <p>
-                        AIを使えば、それらの作業は自動化できます。AIによって時間を生み出し、人がより価値のあることに集中できる社会を作ることが私たちの目的です。
-                    </p>
-                    <div class="company-info">
-                        <div class="info-item">
-                            <span class="info-label">会社名</span>
-                            <span class="info-value">FRENVOX</span>
-                        </div>
-                        <div class="info-item">
-                            <span class="info-label">代表者</span>
-                            <span class="info-value">桑島 海斗</span>
-                        </div>
-                        <div class="info-item">
-                            <span class="info-label">所在地</span>
-                            <span class="info-value">香川県高松市高松町1489-1 ディアス高松A201</span>
-                        </div>
-                        <div class="info-item">
-                            <span class="info-label">メール</span>
-                            <span class="info-value">kaito.k0626@gmail.com</span>
-                        </div>
+                <div class="about-body fade-in">
+                    <p class="tag">About</p>
+                    <h2 class="about-name">桑島 海斗</h2>
+                    <p class="about-name-en">Kaito Kuwajima</p>
+                    <p class="about-role">理学療法士 / AI Engineer</p>
+                    <div class="about-text">
+                        <p>理学療法士として数多くのリハビリ現場で患者と向き合ってきました。「もっと患者に向き合う時間がほしい」——現場の切実な声を、技術の力で解決したい。そう思い、AI開発の世界に飛び込みました。</p>
+                        <p>臨床経験と技術力、両方を持つからこそ、現場に本当にフィットするソリューションを届けられると確信しています。</p>
                     </div>
+                    <div class="about-credentials">
+                        <span>学会発表実績あり</span>
+                        <span>リハビリ×AI特化</span>
+                    </div>
+                    <p class="about-sig">FRENVOX 代表 / 香川県高松市</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- ビジョン -->
-    <section class="section vision" id="vision">
+    <!-- Results / Before-After -->
+    <section class="section section-dark" id="results">
         <div class="container">
-            <div class="section-header">
-                <span class="section-label">Vision</span>
-                <h2 class="section-title">ビジョン</h2>
-            </div>
-            <div class="vision-content reveal-up">
-                <div class="vision-card">
-                    <div class="vision-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
-                        </svg>
+            <p class="tag tag-center">Results</p>
+            <h2 class="section-title section-title-center">AIで何が変わるのか</h2>
+            <p class="section-lead">導入前と導入後で、現場はこう変わります。</p>
+
+            <div class="results-grid">
+                <div class="result-card fade-in">
+                    <p class="result-label">記録業務</p>
+                    <div class="result-compare">
+                        <div class="result-before">
+                            <span class="result-num">2時間</span>
+                            <span class="result-unit">/日</span>
+                        </div>
+                        <span class="result-arrow">→</span>
+                        <div class="result-after">
+                            <span class="result-num">30分</span>
+                            <span class="result-unit">/日</span>
+                        </div>
                     </div>
-                    <p class="vision-text">
-                        日本は人口減少が進んでおり、今後はAIの活用が不可欠になります。<br>
-                        人手不足の時代において、AIを使いこなすことが企業の成長に直結します。
-                    </p>
-                    <div class="vision-divider"></div>
-                    <p class="vision-statement">
-                        AIによって生まれた時間で、<br>
-                        <strong>人がより豊かで幸せに生きられる社会を実現する。</strong>
-                    </p>
+                    <p class="result-note">訪問記録・日報をAIが自動下書き。確認して送信するだけ。</p>
+                </div>
+                <div class="result-card fade-in">
+                    <p class="result-label">書類作成</p>
+                    <div class="result-compare">
+                        <div class="result-before">
+                            <span class="result-num">30分</span>
+                            <span class="result-unit">/件</span>
+                        </div>
+                        <span class="result-arrow">→</span>
+                        <div class="result-after">
+                            <span class="result-num">5分</span>
+                            <span class="result-unit">/件</span>
+                        </div>
+                    </div>
+                    <p class="result-note">ケア計画書・報告書のドラフトをAIが即時生成。</p>
+                </div>
+                <div class="result-card fade-in">
+                    <p class="result-label">動作評価</p>
+                    <div class="result-compare">
+                        <div class="result-before">
+                            <span class="result-num">主観</span>
+                            <span class="result-unit">評価</span>
+                        </div>
+                        <span class="result-arrow">→</span>
+                        <div class="result-after">
+                            <span class="result-num">数値</span>
+                            <span class="result-unit">データ</span>
+                        </div>
+                    </div>
+                    <p class="result-note">スマホ2台で関節可動域・筋力を客観的に計測。経過も自動記録。</p>
+                </div>
+                <div class="result-card fade-in">
+                    <p class="result-label">残業時間</p>
+                    <div class="result-compare">
+                        <div class="result-before">
+                            <span class="result-num">月20h</span>
+                            <span class="result-unit">超</span>
+                        </div>
+                        <span class="result-arrow">→</span>
+                        <div class="result-after">
+                            <span class="result-num">ほぼ</span>
+                            <span class="result-unit">ゼロ</span>
+                        </div>
+                    </div>
+                    <p class="result-note">事務作業の大半をAIに移行。スタッフの負担を根本から解消。</p>
+                </div>
+            </div>
+
+            <div class="results-cta fade-in">
+                <p>「うちの施設ではどれくらい変わる？」</p>
+                <a href="https://forms.gle/h861AAMSrCgoVaNu7" target="_blank" rel="noopener noreferrer" class="btn btn-fill">無料で相談してみる</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section class="section" id="services">
+        <div class="container">
+            <p class="tag">Services</p>
+            <h2 class="section-title">事業内容</h2>
+
+            <div class="service-featured fade-in">
+                <div class="service-featured-img">
+                    <img src="images/rehab-session.jpg" alt="リハビリテーション" loading="lazy">
+                </div>
+                <div class="service-featured-body">
+                    <p class="service-cat">リハビリ施設・医療機関向け</p>
+                    <h3>リハビリ &times; AI ソリューション</h3>
+                    <p>理学療法士の臨床知識をベースに、リハビリ現場に特化したAIツールを開発。スマートフォン2台だけで高精度な動作解析を実現し、特別な機材は一切不要です。</p>
+                    <ul>
+                        <li>歩行中・動作中の関節可動域（ROM）および筋力を定量測定</li>
+                        <li>学会発表済みの技術がベース——エビデンスのあるアプローチ</li>
+                        <li>リハビリ記録の自動生成・評価データの可視化・経過レポート出力</li>
+                        <li>導入レクチャー・操作研修・セキュリティ対策まで一貫サポート</li>
+                        <li>患者データは暗号化通信＋国内サーバーで安全に管理</li>
+                    </ul>
+                    <div class="service-price">要相談 <span>/ 施設の規模・要件による</span></div>
+                    <p class="service-subsidy">IT導入補助金の活用で、最大75%の費用補助を受けられる場合があります。</p>
+                    <a href="https://forms.gle/h861AAMSrCgoVaNu7" target="_blank" rel="noopener noreferrer" class="btn">このサービスを相談する</a>
+                </div>
+            </div>
+
+            <div class="service-grid">
+                <div class="service-item fade-in">
+                    <p class="service-cat">訪問看護・介護施設向け</p>
+                    <h3>医療・介護 AI 導入支援</h3>
+                    <p>訪問記録・日報・ケア計画書の自動下書きなど、記録業務をAIで半減。既存のiPad・PCにそのまま導入でき、新しい機材は不要です。</p>
+                    <div class="service-price">初期 50,000円〜 <span>/ 月額 15,000円〜</span></div>
+                    <p class="service-subsidy">IT導入補助金の対象となる場合があります。</p>
+                    <a href="https://forms.gle/h861AAMSrCgoVaNu7" target="_blank" rel="noopener noreferrer" class="link-arrow">相談する</a>
+                </div>
+                <div class="service-item fade-in">
+                    <p class="service-cat">店舗・事業所・クリニック向け</p>
+                    <h3>ホームページ制作</h3>
+                    <p>集客に特化したレスポンシブ対応のWebサイトを制作。SEO対策済み、スマホ完全対応。医療・介護業界の制作知見を活かした信頼感のあるデザイン。</p>
+                    <div class="service-price">150,000円〜 <span>/ ページ数・仕様による</span></div>
+                    <a href="https://forms.gle/h861AAMSrCgoVaNu7" target="_blank" rel="noopener noreferrer" class="link-arrow">相談する</a>
+                </div>
+                <div class="service-item service-item-free fade-in">
+                    <p class="service-cat">はじめての方へ</p>
+                    <h3>無料 AI 相談（30分）</h3>
+                    <p>AI導入の進め方、ツールの選び方、セキュリティの不安——あらゆるご相談を30分無料でお受けします。「何から始めたらいいか分からない」でも大丈夫です。</p>
+                    <div class="service-price">無料 <span>/ 30分・オンライン</span></div>
+                    <a href="https://forms.gle/h861AAMSrCgoVaNu7" target="_blank" rel="noopener noreferrer" class="link-arrow">Googleフォームで予約する</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- 事業内容 -->
-    <section class="section services" id="services">
+    <!-- Flow -->
+    <section class="section section-dark" id="flow">
         <div class="container">
-            <div class="section-header">
-                <span class="section-label">Services</span>
-                <h2 class="section-title">事業内容</h2>
-                <p class="section-lead">業種・業務ごとに、具体的なパッケージでご提供します。<br><strong>まずは無料相談からお気軽にどうぞ。</strong></p>
-            </div>
-            <div class="services-grid">
-
-                <!-- 1. 無料AI相談 -->
-                <div class="service-card featured reveal-up">
-                    <span class="service-badge">無料</span>
-                    <div class="service-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                            <path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/>
-                            <path d="M8 9h8M8 13h5"/>
-                        </svg>
+            <p class="tag tag-center">Flow</p>
+            <h2 class="section-title section-title-center">導入の流れ</h2>
+            <p class="section-lead">お問い合わせから導入まで、すべてオンラインで完結できます。</p>
+            <div class="flow-list">
+                <div class="flow-step fade-in">
+                    <span class="flow-num">01</span>
+                    <div class="flow-body">
+                        <h3>無料相談（30分）</h3>
+                        <p>現場の課題やご要望をヒアリング。AIで解決できるかどうかをその場でお伝えします。Googleフォームからご予約ください。</p>
                     </div>
-                    <span class="service-target">まずはここから</span>
-                    <h3>無料AI相談サービス</h3>
-                    <p>AI導入の進め方、医療・介護現場での活用法、セキュリティ対策、最適なAIツールの選び方まで、AIに関するあらゆるご相談を30分無料でお受けします。「何から始めたらいいか分からない」段階でもお気軽にどうぞ。</p>
-                    <div class="service-price">
-                        <div class="service-price-item"><span>費用</span>無料 / 30分</div>
-                    </div>
-                    <a href="https://forms.gle/h861AAMSrCgoVaNu7" target="_blank" rel="noopener noreferrer" class="service-cta">このリンクから相談予約する</a>
                 </div>
-
-                <!-- 2. 訪問看護・介護パック -->
-                <div class="service-card highlight reveal-up">
-                    <span class="service-badge service-badge-hot">人気No.1</span>
-                    <div class="service-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                            <path d="M12 21C5.5 17 2 12 2 8a5 5 0 019-3 5 5 0 019 3c0 4-3.5 9-10 13z"/>
-                        </svg>
+                <div class="flow-step fade-in">
+                    <span class="flow-num">02</span>
+                    <div class="flow-body">
+                        <h3>現場ヒアリング・プラン提案</h3>
+                        <p>業務フローを詳しく把握した上で、最適なAI導入プランとお見積もりをご提案。補助金の活用可否もこの段階で確認します。</p>
                     </div>
-                    <span class="service-target">訪問看護・介護</span>
-                    <h3>記録業務AI半減パック</h3>
-                    <p>訪問記録・日報・月次報告・ケア計画書・車両管理など、紙で回している業務をまるごとデジタル化。AIが下書きを自動作成し、記録にかかる時間を半分まで短縮します。既存のiPad・PCにそのまま組み込めるので、新しい機材を買う必要はありません。医療情報の扱いに配慮した安全設計です。</p>
-                    <div class="service-price">
-                        <div class="service-price-item"><span>初期</span>50,000円</div>
-                        <div class="service-price-item"><span>月額</span>15,000円</div>
-                    </div>
-                    <a href="https://forms.gle/h861AAMSrCgoVaNu7" target="_blank" rel="noopener noreferrer" class="service-cta">このパックを相談する</a>
                 </div>
-
-                <!-- 3. AI社内研修 -->
-                <div class="service-card reveal-up">
-                    <div class="service-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                            <path d="M12 14l9-5-9-5-9 5 9 5z"/>
-                            <path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"/>
-                        </svg>
+                <div class="flow-step fade-in">
+                    <span class="flow-num">03</span>
+                    <div class="flow-body">
+                        <h3>開発・構築</h3>
+                        <p>現場のワークフローに合わせてシステムを構築。途中経過を共有しながら進めるので、「思っていたのと違う」がありません。</p>
                     </div>
-                    <span class="service-target">中小企業・事業所</span>
-                    <h3>AI社内研修 3時間パック</h3>
-                    <p>ChatGPT・Copilot・Geminiを現場で使いこなすための、実演中心の3時間研修です。業種を問わずセキュリティを最優先に、やってはいけないリスクも明確にお伝えします。研修資料と録画データも納品するので、後から入社した方もいつでも見返せます。1回あたり最大20名まで参加可能。</p>
-                    <div class="service-price">
-                        <div class="service-price-item"><span>料金</span>300,000円 (出張費・資料込 / 関西圏)</div>
-                    </div>
-                    <a href="https://youtu.be/VEIJ1u8Za0Q" target="_blank" rel="noopener noreferrer" class="service-cta">
-                        <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18" style="vertical-align:middle;margin-right:6px;">
-                            <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814z"/>
-                            <path d="M9.545 15.568V8.432L15.818 12l-6.273 3.568z" fill="#fff"/>
-                        </svg>研修イメージを動画で見る
-                    </a>
                 </div>
-
-                <!-- 4. Google Workspace自動化 -->
-                <div class="service-card reveal-up">
-                    <div class="service-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                            <path d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/>
-                        </svg>
+                <div class="flow-step fade-in">
+                    <span class="flow-num">04</span>
+                    <div class="flow-body">
+                        <h3>導入・研修</h3>
+                        <p>スタッフへの操作研修と運用マニュアルを提供。ITに不慣れな方でも使えるよう、理学療法士の視点で丁寧にレクチャーします。</p>
                     </div>
-                    <span class="service-target">全業種対応</span>
-                    <h3>Google Workspace自動化パック</h3>
-                    <p>スプレッドシートの自動集計、Gmailの定型返信、カレンダー連携、フォームからの自動返信など、毎日の定型業務をGoogle Apps ScriptとAIで自動化します。月100時間規模の作業削減実績もあります。ExcelやLINEとの連携も可能です。</p>
-                    <div class="service-price">
-                        <div class="service-price-item"><span>初期</span>80,000円〜 (要見積)</div>
-                    </div>
-                    <a href="https://forms.gle/h861AAMSrCgoVaNu7" target="_blank" rel="noopener noreferrer" class="service-cta">このパックを相談する</a>
                 </div>
-
-                <!-- 5. 議事録・書類AI -->
-                <div class="service-card reveal-up">
-                    <div class="service-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                            <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/>
-                            <path d="M14 2v6h6M16 13H8M16 17H8M10 9H8"/>
-                        </svg>
+                <div class="flow-step fade-in">
+                    <span class="flow-num">05</span>
+                    <div class="flow-body">
+                        <h3>運用サポート</h3>
+                        <p>導入後も月額サポートで継続フォロー。不具合対応、機能追加のご相談、データ分析レポートの提供まで対応します。</p>
                     </div>
-                    <span class="service-target">クリニック・士業</span>
-                    <h3>議事録・書類AI下書き</h3>
-                    <p>会議・面談・打ち合わせを録音するだけで、AIが議事録の形に自動整形します。契約書・報告書・診断書・面談記録などのドラフトもテンプレから一瞬で生成。書く作業にかかる時間を1/10まで短縮します。</p>
-                    <div class="service-price">
-                        <div class="service-price-item"><span>初期</span>100,000円</div>
-                        <div class="service-price-item"><span>月額</span>20,000円</div>
-                    </div>
-                    <a href="https://forms.gle/h861AAMSrCgoVaNu7" target="_blank" rel="noopener noreferrer" class="service-cta">このパックを相談する</a>
                 </div>
-
-                <!-- 6. HP + AIチャット -->
-                <div class="service-card reveal-up">
-                    <div class="service-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                            <path d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"/>
-                        </svg>
-                    </div>
-                    <span class="service-target">店舗・教室・事業所</span>
-                    <h3>ホームページ + AI問い合わせ窓口</h3>
-                    <p>レスポンシブ対応のホームページと、24時間自動で問い合わせに答えるAIチャット窓口をセットで納品します。問い合わせ内容は自動でメール・LINEに転送されるので、取りこぼしゼロで対応できます。</p>
-                    <div class="service-price">
-                        <div class="service-price-item"><span>初期</span>200,000円〜</div>
-                        <div class="service-price-item"><span>月額</span>10,000円</div>
-                    </div>
-                    <a href="https://forms.gle/h861AAMSrCgoVaNu7" target="_blank" rel="noopener noreferrer" class="service-cta">このパックを相談する</a>
-                </div>
-
             </div>
         </div>
     </section>
 
-    <!-- 提供価値 -->
-    <section class="section value" id="value">
-        <div class="value-bg-grid"></div>
+    <!-- Why -->
+    <section class="section" id="why">
         <div class="container">
-            <div class="section-header">
-                <span class="section-label">Value</span>
-                <h2 class="section-title">提供価値</h2>
-                <p class="section-lead">退屈な作業は、ぜんぶAIに。<br><strong>事務作業もPC作業も、まるごと自動化します。</strong></p>
+            <p class="tag tag-center">Why FRENVOX</p>
+            <h2 class="section-title section-title-center">選ばれる理由</h2>
+            <div class="why-list">
+                <div class="why-item fade-in">
+                    <span class="why-num">01</span>
+                    <div class="why-body">
+                        <h3>理学療法士が開発している</h3>
+                        <p>リハビリの現場を知っている人間が設計するから、現場で本当に使えるものが出来上がります。「技術はすごいけど使えない」がありません。</p>
+                    </div>
+                </div>
+                <div class="why-item fade-in">
+                    <span class="why-num">02</span>
+                    <div class="why-body">
+                        <h3>学会発表済みの技術がベース</h3>
+                        <p>動作解析技術は学会でも発表済み。エビデンスに基づいた信頼性の高いアプローチで、施設の説明責任にも応えます。</p>
+                    </div>
+                </div>
+                <div class="why-item fade-in">
+                    <span class="why-num">03</span>
+                    <div class="why-body">
+                        <h3>導入から定着まで伴走</h3>
+                        <p>ツールを渡して終わりではなく、スタッフ研修から運用サポートまで一気通貫。「導入したけど使われなくなった」を防ぎます。</p>
+                    </div>
+                </div>
+                <div class="why-item fade-in">
+                    <span class="why-num">04</span>
+                    <div class="why-body">
+                        <h3>補助金で費用を大幅に軽減</h3>
+                        <p>IT導入補助金を活用すれば、最大75%の費用補助を受けられる場合があります。申請サポートも無料で対応します。</p>
+                    </div>
+                </div>
             </div>
-            <div class="value-grid">
-                <div class="value-card reveal-up">
-                    <div class="value-card-glow"></div>
-                    <div class="value-card-inner">
-                        <div class="value-icon-wrap">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M9 11l3 3L22 4"/>
-                                <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/>
-                            </svg>
-                        </div>
-                        <div class="value-stat">
-                            <span class="value-stat-num" data-target="90" data-suffix="%">0</span>
-                            <span class="value-stat-label">作業時間 削減</span>
-                        </div>
-                        <h3 class="value-card-title">事務作業の完全自動化</h3>
-                        <p class="value-card-desc">入力・転記・集計・帳票作成まで、繰り返しの事務作業はすべてAIに任せられます。</p>
-                    </div>
-                </div>
-                <div class="value-card reveal-up">
-                    <div class="value-card-glow"></div>
-                    <div class="value-card-inner">
-                        <div class="value-icon-wrap">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
-                                <rect x="3" y="4" width="18" height="12" rx="2"/>
-                                <path d="M8 20h8M12 16v4"/>
-                            </svg>
-                        </div>
-                        <div class="value-stat">
-                            <span class="value-stat-num" data-target="24" data-suffix="h">0</span>
-                            <span class="value-stat-label">無人稼働</span>
-                        </div>
-                        <h3 class="value-card-title">PC作業の完全自動化</h3>
-                        <p class="value-card-desc">深夜も休日もAIが動き続け、人が触らなくても業務が回る環境を構築します。</p>
-                    </div>
-                </div>
-                <div class="value-card reveal-up">
-                    <div class="value-card-glow"></div>
-                    <div class="value-card-inner">
-                        <div class="value-icon-wrap">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M12 22a10 10 0 1 1 10-10"/>
-                                <path d="M22 4L12 14l-3-3"/>
-                            </svg>
-                        </div>
-                        <div class="value-stat">
-                            <span class="value-stat-num" data-target="0" data-suffix="">0</span>
-                            <span class="value-stat-label">ヒューマンエラー</span>
-                        </div>
-                        <h3 class="value-card-title">ミスのない業務品質</h3>
-                        <p class="value-card-desc">転記ミスや確認漏れを根絶し、いつでも安定した正確なアウトプットを実現します。</p>
-                    </div>
-                </div>
-                <div class="value-card reveal-up">
-                    <div class="value-card-glow"></div>
-                    <div class="value-card-inner">
-                        <div class="value-icon-wrap">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/>
-                                <circle cx="12" cy="12" r="3"/>
-                            </svg>
-                        </div>
-                        <div class="value-stat">
-                            <span class="value-stat-num value-stat-infinity">∞</span>
-                            <span class="value-stat-label">創造の時間</span>
-                        </div>
-                        <h3 class="value-card-title">創造的な仕事に集中</h3>
-                        <p class="value-card-desc">退屈な単純作業から解放され、人にしかできない判断・対話・創造に時間を使えます。</p>
-                    </div>
-                </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section section-dark" id="faq">
+        <div class="container">
+            <p class="tag tag-center">FAQ</p>
+            <h2 class="section-title section-title-center">よくあるご質問</h2>
+            <div class="faq-list">
+                <details class="faq-item fade-in">
+                    <summary>AIの導入費用はどのくらいかかりますか？</summary>
+                    <p>施設の規模や要件によりますが、医療・介護AI導入支援は初期5万円〜、月額1.5万円〜が目安です。IT導入補助金を活用すれば、最大75%の費用補助を受けられるケースもあります。まずは無料相談でお見積もりをお出しします。</p>
+                </details>
+                <details class="faq-item fade-in">
+                    <summary>ITに詳しくないスタッフでも使えますか？</summary>
+                    <p>はい。理学療法士が設計しているので、医療・介護の現場の方が迷わず使えるUIになっています。導入時にはスタッフ向けの操作研修を行い、マニュアルもお渡しします。導入後の質問にも随時対応します。</p>
+                </details>
+                <details class="faq-item fade-in">
+                    <summary>患者データのセキュリティは大丈夫ですか？</summary>
+                    <p>患者データは暗号化通信（SSL/TLS）で送受信し、国内サーバーで安全に管理します。アクセス権限の設定、操作ログの記録など、医療情報の取り扱いに配慮した設計です。</p>
+                </details>
+                <details class="faq-item fade-in">
+                    <summary>動作解析に特別な機材は必要ですか？</summary>
+                    <p>いいえ。お手持ちのスマートフォン2台があれば動作解析を始められます。高額なモーションキャプチャー機材は不要です。普段使っているスマホやiPadで、関節可動域や筋力の定量測定が可能です。</p>
+                </details>
+                <details class="faq-item fade-in">
+                    <summary>小規模な施設でも対応してもらえますか？</summary>
+                    <p>もちろんです。個人事業ならではの柔軟さで、大規模法人から個人クリニックまで対応しています。小さく始めて段階的に拡張することもできます。</p>
+                </details>
+                <details class="faq-item fade-in">
+                    <summary>導入までどのくらいの期間がかかりますか？</summary>
+                    <p>シンプルな記録業務のAI化であれば、最短2週間で導入可能です。動作解析AIのカスタマイズ開発は1〜3ヶ月が目安です。お急ぎの場合はご相談ください。</p>
+                </details>
             </div>
         </div>
     </section>
 
     <!-- YouTube -->
-    <section class="section youtube" id="youtube">
+    <section class="section" id="youtube">
         <div class="container">
-            <div class="section-header">
-                <span class="section-label">YouTube</span>
-                <h2 class="section-title">情報発信</h2>
-            </div>
-            <div class="youtube-content reveal-up">
-                <p class="youtube-description">YouTubeチャンネルでAI活用や業務効率化に関する情報を発信しています。</p>
-                <div class="youtube-thumbnails">
-                    <a href="https://youtube.com/channel/UCRaF0SzZ-9pcbwL2-Ha8uhw?si=--FiWrBruBXHMgnN" target="_blank" rel="noopener noreferrer" class="youtube-thumb-link">
-                        <img src="images/youtube-thumb-1.jpg" alt="YouTubeサムネイル" class="youtube-thumb">
-                        <div class="youtube-play-icon">
-                            <svg viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M8 5v14l11-7z"/>
-                            </svg>
-                        </div>
-                    </a>
-                </div>
-                <a href="https://youtube.com/channel/UCRaF0SzZ-9pcbwL2-Ha8uhw?si=--FiWrBruBXHMgnN" target="_blank" rel="noopener noreferrer" class="youtube-button">
-                    <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
-                        <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814z"/>
-                        <path d="M9.545 15.568V8.432L15.818 12l-6.273 3.568z" fill="#fff"/>
-                    </svg>
-                    チャンネルを見る
+            <p class="tag tag-center">YouTube</p>
+            <h2 class="section-title section-title-center">情報発信</h2>
+            <div class="youtube-wrap fade-in">
+                <a href="https://youtube.com/channel/UCRaF0SzZ-9pcbwL2-Ha8uhw?si=--FiWrBruBXHMgnN" target="_blank" rel="noopener noreferrer" class="youtube-thumb">
+                    <img src="images/youtube-thumb-1.jpg" alt="YouTubeチャンネル" loading="lazy">
+                    <div class="youtube-play">
+                        <svg viewBox="0 0 24 24" fill="currentColor" width="32" height="32"><path d="M8 5v14l11-7z"/></svg>
+                    </div>
                 </a>
+                <p class="youtube-desc">AI活用やリハビリ×テクノロジーに関する情報をYouTubeで発信しています。</p>
+                <a href="https://youtube.com/channel/UCRaF0SzZ-9pcbwL2-Ha8uhw?si=--FiWrBruBXHMgnN" target="_blank" rel="noopener noreferrer" class="link-arrow">チャンネルを見る</a>
             </div>
         </div>
     </section>
 
-    <!-- お問い合わせ -->
-    <section class="section contact" id="contact">
+    <!-- CTA Banner -->
+    <section class="cta-banner">
         <div class="container">
-            <div class="section-header">
-                <span class="section-label">Contact</span>
-                <h2 class="section-title">お問い合わせ</h2>
-            </div>
-            <div class="contact-content reveal-up">
-                <p class="contact-description">
-                    AIを活用した業務効率化にご興味がありましたら、<br>
-                    お気軽にお問い合わせください。
-                </p>
-                <form class="contact-form" id="contactForm" action="https://formsubmit.co/kaito.k0626@gmail.com" method="POST">
-                    <input type="hidden" name="_subject" value="【FRENVOX】新しいお問い合わせ">
-                    <input type="hidden" name="_captcha" value="false">
-                    <input type="hidden" name="_next" value="https://kaitokuwajima.github.io/frenvox/thanks.html">
-                    <input type="text" name="_honey" style="display:none">
+            <h2>まずは30分、無料で相談してみませんか？</h2>
+            <p>AI導入のこと、コストのこと、セキュリティのこと——何でもお気軽にどうぞ。</p>
+            <a href="https://forms.gle/h861AAMSrCgoVaNu7" target="_blank" rel="noopener noreferrer" class="btn btn-fill">Googleフォームで無料相談を予約</a>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section" id="contact">
+        <div class="container container-narrow">
+            <p class="tag tag-center">Contact</p>
+            <h2 class="section-title section-title-center">お問い合わせ</h2>
+            <p class="section-lead">サービスに関するご質問やお見積もりのご依頼など、<br>以下のフォームからお気軽にお送りください。</p>
+            <form class="form" id="contactForm" action="https://formsubmit.co/kaito.k0626@gmail.com" method="POST">
+                <input type="hidden" name="_subject" value="【FRENVOX】新しいお問い合わせ">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_next" value="https://kaitokuwajima.github.io/frenvox/thanks.html">
+                <input type="text" name="_honey" style="display:none">
+                <div class="form-row">
                     <div class="form-group">
-                        <label for="name">お名前 <span class="required">*</span></label>
+                        <label for="name">お名前 <span>*</span></label>
                         <input type="text" id="name" name="name" required placeholder="山田 太郎">
                     </div>
                     <div class="form-group">
-                        <label for="email">メールアドレス <span class="required">*</span></label>
+                        <label for="email">メールアドレス <span>*</span></label>
                         <input type="email" id="email" name="email" required placeholder="example@email.com">
                     </div>
-                    <div class="form-group">
-                        <label for="company">会社名</label>
-                        <input type="text" id="company" name="company" placeholder="株式会社〇〇">
-                    </div>
-                    <div class="form-group">
-                        <label for="message">お問い合わせ内容 <span class="required">*</span></label>
-                        <textarea id="message" name="message" rows="5" required placeholder="お気軽にご相談ください"></textarea>
-                    </div>
-                    <button type="submit" class="submit-button">送信する</button>
-                </form>
-            </div>
+                </div>
+                <div class="form-group">
+                    <label for="company">会社名・施設名</label>
+                    <input type="text" id="company" name="company" placeholder="株式会社〇〇 / 〇〇クリニック">
+                </div>
+                <div class="form-group">
+                    <label for="message">お問い合わせ内容 <span>*</span></label>
+                    <textarea id="message" name="message" rows="6" required placeholder="ご相談内容をお書きください"></textarea>
+                </div>
+                <button type="submit" class="btn btn-full">送信する</button>
+            </form>
         </div>
     </section>
 
-    <!-- フッター -->
     <footer class="footer">
         <div class="container">
-            <div class="footer-content">
-                <div class="footer-brand">
-                    <span class="footer-logo">FRENVOX</span>
-                    <p class="footer-tagline">AIで"働く"を再定義する</p>
+            <div class="footer-inner">
+                <div>
+                    <p class="footer-logo">FRENVOX</p>
+                    <p class="footer-sub">理学療法士 &times; AI</p>
                 </div>
-                <div class="footer-links">
-                    <a href="#hero">TOP</a>
-                    <a href="#about">会社概要</a>
-                    <a href="#services">事業内容</a>
-                    <a href="#contact">お問い合わせ</a>
-                </div>
+                <nav class="footer-nav">
+                    <a href="#about">About</a>
+                    <a href="#services">Services</a>
+                    <a href="#faq">FAQ</a>
+                    <a href="#contact">Contact</a>
+                </nav>
                 <div class="footer-legal">
                     <a href="legal.html">特定商取引法に基づく表記</a>
                     <a href="privacy.html">プライバシーポリシー</a>
                     <a href="terms.html">利用規約</a>
                 </div>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 FRENVOX. All Rights Reserved.</p>
-            </div>
+            <p class="footer-copy">&copy; 2025 FRENVOX</p>
         </div>
     </footer>
 
