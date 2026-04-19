@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FRENVOX | 記録業務AI 3ヶ月無料モニター募集｜高松市のデイサービス・デイケア・訪問リハ向け</title>
-    <meta name="description" content="香川県高松市のデイサービス・デイケア・訪問リハ事業所さま向け、記録業務AIを3ヶ月無料でお試しいただけるモニター施設を1施設募集。理学療法士が開発、国内サーバーで安全運用。">
-    <meta property="og:title" content="記録業務AI 3ヶ月無料モニター募集｜FRENVOX">
-    <meta property="og:description" content="高松市のデイサービス・デイケア・訪問リハ事業所さま、先着1施設。理学療法士が開発した記録AIを3ヶ月無料で。">
+    <title>FRENVOX | パソコン業務をワンクリック化｜高松市のリハビリ・介護事業所向けAI活用支援</title>
+    <meta name="description" content="FRENVOXは香川県高松市で、理学療法士が運営するAI活用支援の会社です。議事録・サービス担当者会議記録・送迎管理など、既存のAIツールを組み合わせて現場のパソコン業務をワンクリック化します。デイサービス・デイケア・訪問リハ事業所向け、3ヶ月無料モニター1施設募集中。">
+    <meta property="og:title" content="パソコン業務をワンクリック化｜FRENVOX">
+    <meta property="og:description" content="高松市のデイ・デイケア・訪問リハ事業所さま、先着1施設。理学療法士が運営するAI活用支援を3ヶ月無料で。">
     <meta property="og:type" content="website">
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -41,6 +41,12 @@
         .btn-phone small { display:block; font-size:11px; font-weight:400; margin-top:2px; }
         .remaining { display:inline-block; background:#d94444; color:#fff; padding:4px 12px; border-radius:100px; font-size:12px; font-weight:700; margin-left:12px; vertical-align:middle; }
 
+        /* Examples grid */
+        .examples { display:grid; grid-template-columns:repeat(auto-fit, minmax(260px, 1fr)); gap:20px; margin-top:32px; }
+        .example-card { background:#1a1a1a; padding:28px; border-radius:6px; border:1px solid #2a2a2a; }
+        .example-card h3 { color:#c8a24e; font-size:17px; margin:0 0 12px; font-weight:700; }
+        .example-card p { color:#ddd; font-size:14px; line-height:1.7; margin:0; }
+
         @media (max-width:600px) {
             .monitor-list li { grid-template-columns:1fr; gap:4px; }
             .monitor-list li strong { font-size:13px; }
@@ -50,7 +56,7 @@
 <body>
 
     <div class="monitor-bar">
-        <strong>【先着1施設・残り1枠】</strong>記録業務AI 3ヶ月無料モニター募集中
+        <strong>【先着1施設・残り1枠】</strong>AI業務改善 3ヶ月無料モニター募集中
         <a href="#monitor">詳細を見る →</a>
     </div>
 
@@ -62,10 +68,11 @@
             </button>
             <ul class="nav-menu" id="navMenu">
                 <li><a href="#monitor" class="nav-link">モニター募集</a></li>
-                <li><a href="#about" class="nav-link">開発者</a></li>
+                <li><a href="#examples" class="nav-link">事例</a></li>
+                <li><a href="#about" class="nav-link">代表</a></li>
                 <li><a href="#flow" class="nav-link">流れ</a></li>
                 <li><a href="#faq" class="nav-link">FAQ</a></li>
-                <li><a href="#contact" class="nav-link">申込</a></li>
+                <li><a href="#contact" class="nav-link">相談する</a></li>
             </ul>
         </div>
     </nav>
@@ -73,11 +80,11 @@
     <!-- Hero -->
     <section class="hero" id="hero">
         <div class="hero-inner">
-            <p class="hero-tag">香川県高松市・リハビリ事業所さま向け</p>
-            <h1 class="hero-title">記録業務を、<br>月20時間削減する。</h1>
-            <p class="hero-lead">デイサービス・デイケア・訪問リハ事業所さまへ。<br>理学療法士が開発した記録AIを、<strong>3ヶ月間無料</strong>でお試しいただけます。</p>
+            <p class="hero-tag">香川県高松市・リハビリ／介護事業所さま向け</p>
+            <h1 class="hero-title">パソコン業務を、<br>ボタンひとつで。</h1>
+            <p class="hero-lead">FRENVOXは、理学療法士が運営する<strong>AI活用支援</strong>の会社です。<br>議事録・会議録・送迎管理——既存のAIツールを組み合わせて、<br>現場の「手間」を<strong>ワンクリックで終わる</strong>仕組みに変えます。</p>
             <div class="hero-actions">
-                <a href="#monitor" class="btn btn-fill">モニター募集の詳細を見る</a>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLScgxARbDTnTb6Z-cD3skANFIr3jfzXzVDz6nyi-yZzeD7qvhQ/viewform" target="_blank" rel="noopener noreferrer" class="btn btn-fill">30分の無料相談を予約する</a>
                 <a href="tel:08043432366" class="btn">電話で相談する</a>
             </div>
         </div>
@@ -88,7 +95,7 @@
         <div class="container">
             <span class="monitor-tag">MONITOR 2026</span>
             <h2 class="monitor-title">3ヶ月無料モニター施設を<br>1施設だけ募集します<span class="remaining">残り1枠</span></h2>
-            <p class="monitor-lead">FRENVOXは、理学療法士が現場の「記録業務の重さ」を解決するために開発したAIツールです。<br>最初の導入施設として、一緒にツールを磨いてくださる事業所さまを高松市内から1施設だけ募集します。</p>
+            <p class="monitor-lead">FRENVOXは、現場のパソコン業務をAIで自動化する会社です。最初の実名事例となってくださる事業所さまを高松市内から1施設だけ募集します。<br>月1回1時間のセッションで全業務をヒアリングし、「これは自動化できる」とお伝えした業務を動画または実際のツールとしてお渡しします。</p>
 
             <div class="monitor-box">
                 <h3>募集要項</h3>
@@ -96,93 +103,57 @@
                     <li><strong>対象</strong><span>香川県高松市内の<br>デイサービス・デイケア・通所リハ・訪問リハ事業所</span></li>
                     <li><strong>募集施設数</strong><span>1施設（先着順）</span></li>
                     <li><strong>期間</strong><span>2026年5月〜7月（3ヶ月間）</span></li>
-                    <li><strong>対応範囲</strong><span>訪問記録・日報・ケア計画書のAI下書き自動生成／既存のiPad・PCで利用可／現場スタッフ向け操作研修込み</span></li>
-                    <li><strong>ご協力事項</strong><span>①月1回30分のヒアリング<br>②導入3ヶ月後、実名での事例掲載のご許可（施設名・代表者名を公開）</span></li>
-                    <li><strong>ご負担</strong><span>なし（通信費・機材費もFRENVOX側で負担）</span></li>
+                    <li><strong>対応範囲</strong><span>月1回1時間のヒアリングセッション／全業務を棚卸し、自動化可能な業務を特定／自動化の「やり方」を動画で提供、または実際のツール（マクロ・スクリプト・AI連携）をお渡し／スタッフ向け操作レクチャー込み</span></li>
+                    <li><strong>ご協力事項</strong><span>①月1回1時間のヒアリング<br>②3ヶ月後、<strong>実名での事例掲載のご許可</strong>（施設名・代表者名を公開）</span></li>
+                    <li><strong>ご負担</strong><span>なし（通信費・クラウド利用料もFRENVOX側で負担）</span></li>
                 </ul>
                 <div class="monitor-price">
-                    <span class="old">通常 初期50,000円＋月額15,000円×3 ＝ 95,000円</span>
+                    <span class="old">通常プラン相当額</span>
                     <span class="new">→ 0円</span>
                     <span class="note">3ヶ月終了後の継続は任意。終了も自由です。</span>
                 </div>
             </div>
 
-            <p class="monitor-lead" style="font-size:15px;"><strong>なぜ無料なのか？</strong><br>最初の導入事例を作ることが、FRENVOXにとって何より価値があるからです。実地で磨かれていないツールを有料で売るつもりはありません。使っていただき、改善し、事例化する——ここまで含めてこの3ヶ月です。</p>
+            <p class="monitor-lead" style="font-size:15px;"><strong>なぜ無料なのか？</strong><br>FRENVOXはまだ世に出たばかりの会社です。最初の実名事例を作ることが、今後の事業にとって何より価値があるからです。「匿名で事例協力」では次につながらないため、このモニターは<strong>実名公開に同意いただける施設さまに限定</strong>しています。</p>
 
             <div class="monitor-actions">
-                <a href="#contact" class="btn-primary">モニターに応募する</a>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLScgxARbDTnTb6Z-cD3skANFIr3jfzXzVDz6nyi-yZzeD7qvhQ/viewform" target="_blank" rel="noopener noreferrer" class="btn-primary">まず30分の無料相談を予約する</a>
                 <a href="tel:08043432366" class="btn-phone">電話で相談する<small>080-4343-2366（6:30-7:30 / 12:30-13:30 / 18:00-18:30）</small></a>
             </div>
         </div>
     </section>
 
-    <!-- 解決できること -->
-    <section class="section section-dark" id="results">
+    <!-- Examples（具体的なワンクリック化例） -->
+    <section class="section section-dark" id="examples">
         <div class="container">
-            <p class="tag tag-center">What Changes</p>
-            <h2 class="section-title section-title-center">解決したいのは、この4つです</h2>
-            <p class="section-lead">リハ現場の「記録の重さ」を、AIが裏で処理する想定です。<br>数値は開発時の試算。実施設での検証を、このモニターで行います。</p>
+            <p class="tag tag-center">Examples</p>
+            <h2 class="section-title section-title-center">こんな業務を、ワンクリックで。</h2>
+            <p class="section-lead">FRENVOXはゼロからツールを開発する会社ではありません。<br>既存のAIツールを現場に合わせて組み合わせ、「ボタンひとつで終わる」状態まで整えるのが私たちの仕事です。</p>
 
-            <div class="results-grid">
-                <div class="result-card fade-in">
-                    <p class="result-label">訪問記録</p>
-                    <div class="result-compare">
-                        <div class="result-before">
-                            <span class="result-num">2時間</span>
-                            <span class="result-unit">/日</span>
-                        </div>
-                        <span class="result-arrow">→</span>
-                        <div class="result-after">
-                            <span class="result-num">30分</span>
-                            <span class="result-unit">/日（想定）</span>
-                        </div>
-                    </div>
-                    <p class="result-note">訪問メモの音声や手書きをAIが整形。確認して送信するだけ。</p>
+            <div class="examples">
+                <div class="example-card fade-in">
+                    <h3>議事録の作成</h3>
+                    <p>会議の音声を録音するだけで、AIが議題別に整理された議事録を自動生成。誰が何を発言したかまで整形します。</p>
                 </div>
-                <div class="result-card fade-in">
-                    <p class="result-label">ケア計画書</p>
-                    <div class="result-compare">
-                        <div class="result-before">
-                            <span class="result-num">30分</span>
-                            <span class="result-unit">/件</span>
-                        </div>
-                        <span class="result-arrow">→</span>
-                        <div class="result-after">
-                            <span class="result-num">5分</span>
-                            <span class="result-unit">/件（想定）</span>
-                        </div>
-                    </div>
-                    <p class="result-note">過去の記録を学習して、ケア計画書の下書きを即時生成。</p>
+                <div class="example-card fade-in">
+                    <h3>サービス担当者会議の記録</h3>
+                    <p>多職種連携の会議内容を自動で記録・要約。ケアマネ・看護師・リハ職の発言を職種別に整理して、そのまま書類に展開できます。</p>
                 </div>
-                <div class="result-card fade-in">
-                    <p class="result-label">日報・申し送り</p>
-                    <div class="result-compare">
-                        <div class="result-before">
-                            <span class="result-num">手書き</span>
-                            <span class="result-unit">中心</span>
-                        </div>
-                        <span class="result-arrow">→</span>
-                        <div class="result-after">
-                            <span class="result-num">音声</span>
-                            <span class="result-unit">→自動整形</span>
-                        </div>
-                    </div>
-                    <p class="result-note">移動中の音声メモからAIが日報を自動生成。移動時間を記録時間に。</p>
+                <div class="example-card fade-in">
+                    <h3>送迎の管理</h3>
+                    <p>利用者の住所・時間帯・乗車ルートを一括管理。変更があればワンクリックで再計算し、ドライバー向けの表も自動更新されます。</p>
                 </div>
-                <div class="result-card fade-in">
-                    <p class="result-label">残業・持ち帰り</p>
-                    <div class="result-compare">
-                        <div class="result-before">
-                            <span class="result-num">月20h</span>
-                            <span class="result-unit">超</span>
-                        </div>
-                        <span class="result-arrow">→</span>
-                        <div class="result-after">
-                            <span class="result-num">大幅</span>
-                            <span class="result-unit">削減（想定）</span>
-                        </div>
-                    </div>
-                    <p class="result-note">事務作業の大半をAIに移行。スタッフの負担を根本から軽くする設計。</p>
+                <div class="example-card fade-in">
+                    <h3>訪問記録・日報</h3>
+                    <p>訪問後の音声メモや手書きメモをAIが整形。移動時間を記録時間に変え、持ち帰り残業をなくします。</p>
+                </div>
+                <div class="example-card fade-in">
+                    <h3>ケア計画書のドラフト</h3>
+                    <p>過去の記録を学習して、ケア計画書の下書きを即時生成。ゼロから書く時間をなくし、仕上げに集中できます。</p>
+                </div>
+                <div class="example-card fade-in">
+                    <h3>その他、ご相談ください</h3>
+                    <p>「これは自動化できる？」というご相談は、無料相談で1時間ヒアリング。できる／できないをその場でお伝えします。</p>
                 </div>
             </div>
         </div>
@@ -196,17 +167,17 @@
                     <img src="images/profile.png" alt="桑島 海斗" width="400" height="400" loading="lazy">
                 </div>
                 <div class="about-body fade-in">
-                    <p class="tag">About / 開発者</p>
+                    <p class="tag">About / 代表</p>
                     <h2 class="about-name">桑島 海斗</h2>
                     <p class="about-name-en">Kaito Kuwajima</p>
-                    <p class="about-role">理学療法士 / AI Engineer</p>
+                    <p class="about-role">FRENVOX 代表 ／ 理学療法士</p>
                     <div class="about-text">
-                        <p>理学療法士としてリハビリ現場で働いてきた中で、いちばん辛かったのは「記録」でした。患者と向き合った時間のあとに、書類とカルテが待っている。スタッフが疲弊していく姿を見て、AIで解決したいと思い開発を始めました。</p>
-                        <p>FRENVOXはまだ世に出たばかりのツールです。だからこそ、最初の1施設で実地検証させてください。3ヶ月後には、事例としてお渡しできる価値があるものに仕上げます。</p>
+                        <p>理学療法士としてリハビリ現場で働いてきた中で、いちばん辛かったのは「パソコン業務」でした。患者と向き合った時間のあとに、書類とカルテと会議録が待っている。スタッフが疲弊していく姿を見て、AIで解決したいと思い、この会社を立ち上げました。</p>
+                        <p>私はAIをゼロから開発するエンジニアではありません。世の中に既にある優れたAIツールを、現場の業務に合わせて組み合わせ、「ボタンひとつで終わる」状態まで整える——その設計と実装が私の仕事です。「ワンクリック化」をキーワードに、現場の手間を根本から削ります。</p>
                     </div>
                     <div class="about-credentials">
                         <span>理学療法士</span>
-                        <span>動作解析 学会発表経験</span>
+                        <span>AI活用支援</span>
                         <span>高松市在住・対面対応可</span>
                     </div>
                     <p class="about-sig">FRENVOX 代表 / 香川県高松市</p>
@@ -220,41 +191,41 @@
         <div class="container">
             <p class="tag tag-center">Flow</p>
             <h2 class="section-title section-title-center">モニター導入の流れ</h2>
-            <p class="section-lead">お申込みから運用開始まで、最短2週間です。</p>
+            <p class="section-lead">まずは30分の無料相談から。日程はWebから直接ご予約いただけます。</p>
             <div class="flow-list">
                 <div class="flow-step fade-in">
                     <span class="flow-num">01</span>
                     <div class="flow-body">
-                        <h3>お申込み・ご相談</h3>
-                        <p>ページ下部のフォームまたはお電話（080-4343-2366）から。まずは現場の課題を30分ヒアリングします。</p>
+                        <h3>30分の無料相談を予約</h3>
+                        <p>予約フォームから直接日程を選んでください（自動で確認メールが届きます）。Zoom または お電話で、現場の課題を30分でヒアリングします。</p>
                     </div>
                 </div>
                 <div class="flow-step fade-in">
                     <span class="flow-num">02</span>
                     <div class="flow-body">
-                        <h3>現場訪問・詳細ヒアリング</h3>
-                        <p>高松市内、こちらから直接お伺いします。現在の記録業務のフロー、使っているiPad・PCを確認し、AI導入の設計をご提案します。</p>
+                        <h3>現場訪問（必要に応じて）</h3>
+                        <p>高松市内、こちらから直接お伺いします。現在の業務フロー、使っているiPad・PCを確認し、自動化できる業務を特定します。</p>
                     </div>
                 </div>
                 <div class="flow-step fade-in">
                     <span class="flow-num">03</span>
                     <div class="flow-body">
-                        <h3>セットアップ・操作研修</h3>
-                        <p>既存の端末にツールをセットアップ。スタッフ全員への操作研修とマニュアル提供まで対応します。ITに不慣れな方でも大丈夫です。</p>
+                        <h3>モニター契約・セッション開始</h3>
+                        <p>条件にご同意いただいた上で、モニター契約を締結。月1回1時間のセッションをセットします。</p>
                     </div>
                 </div>
                 <div class="flow-step fade-in">
                     <span class="flow-num">04</span>
                     <div class="flow-body">
-                        <h3>3ヶ月間の運用</h3>
-                        <p>月1回30分、現場へ伺ってヒアリング。改善要望はその場で吸い上げ、ツールを施設に合わせて磨き込みます。</p>
+                        <h3>3ヶ月間の自動化提供</h3>
+                        <p>セッションで業務を棚卸し→自動化の「やり方」を動画でお渡し、または実際のツール（マクロ・AI連携スクリプトなど）を構築してお渡しします。</p>
                     </div>
                 </div>
                 <div class="flow-step fade-in">
                     <span class="flow-num">05</span>
                     <div class="flow-body">
                         <h3>継続 or 終了（自由選択）</h3>
-                        <p>3ヶ月後、継続をご希望であれば通常価格（月額15,000円〜）で。終了もいつでも自由です。事例化のご協力に感謝いたします。</p>
+                        <p>3ヶ月後、継続をご希望であれば通常プランで。終了もいつでも自由です。実名での事例掲載にご協力いただき感謝いたします。</p>
                     </div>
                 </div>
             </div>
@@ -269,27 +240,27 @@
             <div class="faq-list">
                 <details class="faq-item fade-in">
                     <summary>本当に3ヶ月間、完全無料なのですか？</summary>
-                    <p>はい。初期費用・月額費用ともに0円です。通信費や追加機材もFRENVOX側で負担します。3ヶ月後の継続判断は自由で、終了を選んでもペナルティは一切ありません。</p>
+                    <p>はい。費用は0円です。クラウド利用料や通信費もFRENVOX側で負担します。3ヶ月後の継続判断は自由で、終了を選んでもペナルティは一切ありません。</p>
                 </details>
                 <details class="faq-item fade-in">
                     <summary>なぜ無料でやっているのですか？</summary>
-                    <p>FRENVOXにとって「最初の実地事例」を作ることが、何よりの資産になるからです。まだ世に出たばかりのツールを有料で売るより、本気で使っていただいて一緒に磨きたいと考えています。</p>
+                    <p>FRENVOXは立ち上がったばかりの会社です。最初の実名事例を作ることが、何よりの資産になると考えています。「本気で使っていただき、一緒に磨き、事例化する」——このサイクルを最初の1施設と実現したいからです。</p>
+                </details>
+                <details class="faq-item fade-in">
+                    <summary>利用者データの管理先はどこですか？セキュリティは大丈夫ですか？</summary>
+                    <p>FRENVOXでは、データ管理にGoogle Cloud（Googleが提供するクラウドサービス）を中心に利用します。Googleのような大手クラウド事業者は、個人情報保護法における「クラウドサービス例外」の考え方に該当し、適切な契約のもと医療・介護分野でも広く活用されています。通信はすべて暗号化（SSL/TLS）、アクセス権限の設定・操作ログ記録により、安全性に配慮した運用を行います。施設さまのご要望に応じて、国内サーバーへの移管など個別対応も可能です。</p>
                 </details>
                 <details class="faq-item fade-in">
                     <summary>3ヶ月後、継続しない場合のデータはどうなりますか？</summary>
-                    <p>ご希望に応じて、全データをCSV/PDFでエクスポートしてお渡しします。FRENVOX側に残すデータも、ご希望があれば完全削除いたします。</p>
+                    <p>ご希望に応じて、全データをCSV/PDFでエクスポートしてお渡しします。FRENVOX側に保存されているデータも、ご希望があれば完全削除いたします。</p>
                 </details>
                 <details class="faq-item fade-in">
                     <summary>ITに詳しくないスタッフでも使えますか？</summary>
-                    <p>はい。理学療法士が設計しているので、医療・介護現場の方が迷わず使えるUIになっています。導入時にスタッフ向け研修とマニュアルをお渡しし、導入後も月1回の訪問で質問をお受けします。</p>
-                </details>
-                <details class="faq-item fade-in">
-                    <summary>利用者データのセキュリティは大丈夫ですか？</summary>
-                    <p>データは暗号化通信（SSL/TLS）で送受信し、国内サーバーで管理します。アクセス権限設定、操作ログ記録など、介護・医療情報の取り扱いに配慮した設計です。施設の個人情報保護規程に合わせた運用もご相談いただけます。</p>
+                    <p>はい。FRENVOXがお渡しするものは、多くの場合「ボタンを押すだけ」「ファイルを置くだけ」「録音して送るだけ」というシンプルな形に整えます。セッションごとに操作レクチャーも行うので、ITに不慣れな方でもご利用いただけます。</p>
                 </details>
                 <details class="faq-item fade-in">
                     <summary>事例として「施設名」を出すのは抵抗があります</summary>
-                    <p>恐縮ですが、今回のモニターは「実名での事例掲載に同意いただける施設さま」に限らせていただいております。匿名での掲載は受け付けておりません。実名公開が難しい場合は、2026年8月以降の通常プラン（有料）をご検討ください。</p>
+                    <p>恐縮ですが、今回のモニターは<strong>実名での事例掲載に同意いただける施設さまに限定</strong>させていただいております。匿名での掲載は受け付けておりません。実名公開が難しい場合は、モニター期間終了後（2026年8月以降）の通常プラン（有料）をご検討ください。</p>
                 </details>
                 <details class="faq-item fade-in">
                     <summary>個人の訪問リハ事業でも応募できますか？</summary>
@@ -297,7 +268,11 @@
                 </details>
                 <details class="faq-item fade-in">
                     <summary>もし1施設が埋まったあとは？</summary>
-                    <p>キャンセル待ちとして情報をお伝えしておきます。また、モニター期間終了後（2026年8月以降）から、通常プランでの受付を順次開始いたします。</p>
+                    <p>2つの選択肢がございます。<br>① キャンセル待ち：次の募集枠が空き次第ご連絡します。<br>② 通常プランでの契約：モニターを待たず、すぐに業務改善を始められます。月額費用が発生しますが、モニター同様のセッションとツール提供を行います。<br>お急ぎの場合は②、少しお待ちいただける場合は①をおすすめします。</p>
+                </details>
+                <details class="faq-item fade-in">
+                    <summary>FRENVOXさんはAIを開発している会社なのですか？</summary>
+                    <p>いいえ。FRENVOXは、世の中にある優れたAIツールを「現場で使える形」に組み合わせる会社です。ChatGPT・Claude・Geminiなど、既存のAIを現場業務に合わせて連携・自動化し、「ボタンひとつで終わる」状態に整えるのが私たちの仕事です。理学療法士としての現場感覚と、AI活用の実装知識の両方で、現場に合う仕組みを設計します。</p>
                 </details>
             </div>
         </div>
@@ -306,10 +281,10 @@
     <!-- Final CTA -->
     <section class="cta-banner">
         <div class="container">
-            <h2>先着1施設・残り1枠。<br>3ヶ月無料モニターに応募する。</h2>
-            <p>高松市のデイサービス・デイケア・訪問リハ事業所さまへ。<br>迷ったら、まず電話で10分お話しませんか？</p>
+            <h2>先着1施設・残り1枠。<br>まずは30分、お話ししませんか？</h2>
+            <p>日程はWebから直接ご予約いただけます。自動で確認メールが届きます。<br>お急ぎの方はお電話（080-4343-2366）でも大丈夫です。</p>
             <div style="display:flex; gap:16px; justify-content:center; flex-wrap:wrap; margin-top:24px;">
-                <a href="#contact" class="btn btn-fill">フォームで応募する</a>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLScgxARbDTnTb6Z-cD3skANFIr3jfzXzVDz6nyi-yZzeD7qvhQ/viewform" target="_blank" rel="noopener noreferrer" class="btn btn-fill">30分の無料相談を予約する</a>
                 <a href="tel:08043432366" class="btn">電話する 080-4343-2366</a>
             </div>
         </div>
@@ -318,9 +293,18 @@
     <!-- Contact -->
     <section class="section" id="contact">
         <div class="container container-narrow">
-            <p class="tag tag-center">Application</p>
-            <h2 class="section-title section-title-center">モニター応募フォーム</h2>
-            <p class="section-lead">下記フォームを記入 → 送信ボタンでメールアプリが開きます。そのまま送信してください。<br>お急ぎの方はお電話（<a href="tel:08043432366">080-4343-2366</a>）までどうぞ。</p>
+            <p class="tag tag-center">Contact</p>
+            <h2 class="section-title section-title-center">相談する／応募する</h2>
+            <p class="section-lead">いちばん早いのは <strong>Webでの予約</strong> です。<br>「まずは文字で相談内容を伝えたい」場合は、下記フォームからもどうぞ。</p>
+
+            <div style="background:#f6f3ed; border-radius:8px; padding:32px; margin-bottom:32px; text-align:center;">
+                <p style="font-size:14px; color:#555; margin:0 0 12px; letter-spacing:0.05em;">RECOMMENDED</p>
+                <h3 style="font-size:22px; font-weight:700; margin:0 0 12px;">30分の無料相談を予約する</h3>
+                <p style="font-size:14px; color:#555; margin:0 0 20px;">Webから日程を直接選ぶと、自動で確認メールが届きます。<br>時間枠：6:30-7:00 ／ 12:30-13:30 ／ 18:00-18:30</p>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLScgxARbDTnTb6Z-cD3skANFIr3jfzXzVDz6nyi-yZzeD7qvhQ/viewform" target="_blank" rel="noopener noreferrer" class="btn btn-full" style="max-width:400px; margin:0 auto;">予約フォームを開く</a>
+            </div>
+
+            <p class="section-lead" style="margin-top:48px;">文字で詳しくお送りいただきたい場合は、こちらからどうぞ。<br>送信ボタンでメールアプリが開きます。</p>
             <form class="form" id="contactForm" onsubmit="return sendApplication(event)">
                 <div class="form-row">
                     <div class="form-group">
@@ -355,17 +339,17 @@
                 </div>
                 <div class="form-group">
                     <label for="message">ご相談内容・現場の課題 <span>*</span></label>
-                    <textarea id="message" name="message" rows="6" required placeholder="例）訪問記録に毎日2時間かかっている。スタッフの残業を減らしたい。など"></textarea>
+                    <textarea id="message" name="message" rows="6" required placeholder="例）訪問記録に毎日2時間かかっている。議事録作成の時間を減らしたい。など"></textarea>
                 </div>
-                <button type="submit" class="btn btn-full">モニターに応募する（メールアプリが開きます）</button>
-                <p style="font-size:12px; color:#888; text-align:center; margin-top:16px;">送信ボタンを押すとメールアプリが起動し、入力内容が自動的に本文に入ります。<br>そのまま送信するだけで完了です。メールアプリが起動しない場合は直接 <a href="mailto:kaito.k0626@gmail.com">kaito.k0626@gmail.com</a> 宛にご連絡ください。</p>
+                <button type="submit" class="btn btn-full">メールで送る（メールアプリが開きます）</button>
+                <p style="font-size:12px; color:#888; text-align:center; margin-top:16px;">送信ボタンを押すとメールアプリが起動し、入力内容が自動で本文に入ります。<br>そのまま送信するだけで完了です。メールアプリが起動しない場合は直接 <a href="mailto:kaito.k0626@gmail.com">kaito.k0626@gmail.com</a> 宛にご連絡ください。</p>
             </form>
             <script>
                 function sendApplication(e) {
                     e.preventDefault();
                     const f = e.target;
                     const body = [
-                        '【FRENVOX モニター応募】',
+                        '【FRENVOX お問い合わせ／モニター応募】',
                         '',
                         'お名前：' + f.name.value,
                         'メール：' + f.email.value,
@@ -377,9 +361,9 @@
                         f.message.value,
                         '',
                         '---',
-                        'このメールはFRENVOXサイトの応募フォームから自動生成されました。'
+                        'このメールはFRENVOXサイトのフォームから自動生成されました。'
                     ].join('\n');
-                    const subject = '【FRENVOX モニター応募】' + f.company.value + '／' + f.name.value;
+                    const subject = '【FRENVOX】' + f.company.value + '／' + f.name.value;
                     location.href = 'mailto:kaito.k0626@gmail.com?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
                     return false;
                 }
@@ -392,15 +376,16 @@
             <div class="footer-inner">
                 <div>
                     <p class="footer-logo">FRENVOX</p>
-                    <p class="footer-sub">理学療法士 &times; AI</p>
+                    <p class="footer-sub">パソコン業務をワンクリック化</p>
                     <p class="footer-sub" style="margin-top:8px; font-size:12px;">香川県高松市<br>080-4343-2366<br>kaito.k0626@gmail.com</p>
                 </div>
                 <nav class="footer-nav">
                     <a href="#monitor">モニター募集</a>
-                    <a href="#about">開発者</a>
+                    <a href="#examples">事例</a>
+                    <a href="#about">代表</a>
                     <a href="#flow">流れ</a>
                     <a href="#faq">FAQ</a>
-                    <a href="#contact">申込</a>
+                    <a href="#contact">相談する</a>
                 </nav>
                 <div class="footer-legal">
                     <a href="legal.html">特定商取引法に基づく表記</a>
