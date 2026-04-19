@@ -97,7 +97,7 @@
                     <li><strong>募集施設数</strong><span>1施設（先着順）</span></li>
                     <li><strong>期間</strong><span>2026年5月〜7月（3ヶ月間）</span></li>
                     <li><strong>対応範囲</strong><span>訪問記録・日報・ケア計画書のAI下書き自動生成／既存のiPad・PCで利用可／現場スタッフ向け操作研修込み</span></li>
-                    <li><strong>ご協力事項</strong><span>①月1回30分のヒアリング<br>②導入3ヶ月後、事例としてサイト掲載のご許可（施設名の匿名化も可）</span></li>
+                    <li><strong>ご協力事項</strong><span>①月1回30分のヒアリング<br>②導入3ヶ月後、実名での事例掲載のご許可（施設名・代表者名を公開）</span></li>
                     <li><strong>ご負担</strong><span>なし（通信費・機材費もFRENVOX側で負担）</span></li>
                 </ul>
                 <div class="monitor-price">
@@ -111,7 +111,7 @@
 
             <div class="monitor-actions">
                 <a href="#contact" class="btn-primary">モニターに応募する</a>
-                <a href="tel:08043432366" class="btn-phone">電話で相談する<small>080-4343-2366（平日9-19時）</small></a>
+                <a href="tel:08043432366" class="btn-phone">電話で相談する<small>080-4343-2366（6:30-7:30 / 12:30-13:30 / 18:00-18:30）</small></a>
             </div>
         </div>
     </section>
@@ -289,7 +289,7 @@
                 </details>
                 <details class="faq-item fade-in">
                     <summary>事例として「施設名」を出すのは抵抗があります</summary>
-                    <p>匿名化も可能です。「高松市内の通所リハA事業所さま（利用者50名規模）」のような形でも問題ありません。数字（削減時間など）だけでの公開も可能です。ご要望に合わせて柔軟に対応します。</p>
+                    <p>恐縮ですが、今回のモニターは「実名での事例掲載に同意いただける施設さま」に限らせていただいております。匿名での掲載は受け付けておりません。実名公開が難しい場合は、2026年8月以降の通常プラン（有料）をご検討ください。</p>
                 </details>
                 <details class="faq-item fade-in">
                     <summary>個人の訪問リハ事業でも応募できますか？</summary>
@@ -320,12 +320,8 @@
         <div class="container container-narrow">
             <p class="tag tag-center">Application</p>
             <h2 class="section-title section-title-center">モニター応募フォーム</h2>
-            <p class="section-lead">下記フォームからお申込みください。3営業日以内にご連絡いたします。<br>お急ぎの方はお電話（<a href="tel:08043432366">080-4343-2366</a>）までどうぞ。</p>
-            <form class="form" id="contactForm" action="https://formsubmit.co/kaito.k0626@gmail.com" method="POST">
-                <input type="hidden" name="_subject" value="【FRENVOX】モニター応募／お問い合わせ">
-                <input type="hidden" name="_captcha" value="false">
-                <input type="hidden" name="_next" value="https://kaitokuwajima.github.io/frenvox/thanks.html">
-                <input type="text" name="_honey" style="display:none">
+            <p class="section-lead">下記フォームを記入 → 送信ボタンでメールアプリが開きます。そのまま送信してください。<br>お急ぎの方はお電話（<a href="tel:08043432366">080-4343-2366</a>）までどうぞ。</p>
+            <form class="form" id="contactForm" onsubmit="return sendApplication(event)">
                 <div class="form-row">
                     <div class="form-group">
                         <label for="name">お名前 <span>*</span></label>
@@ -361,9 +357,33 @@
                     <label for="message">ご相談内容・現場の課題 <span>*</span></label>
                     <textarea id="message" name="message" rows="6" required placeholder="例）訪問記録に毎日2時間かかっている。スタッフの残業を減らしたい。など"></textarea>
                 </div>
-                <button type="submit" class="btn btn-full">モニターに応募する</button>
-                <p style="font-size:12px; color:#888; text-align:center; margin-top:16px;">送信いただいた内容は、FRENVOX（桑島海斗）のみが閲覧します。営業目的の第三者提供は一切行いません。</p>
+                <button type="submit" class="btn btn-full">モニターに応募する（メールアプリが開きます）</button>
+                <p style="font-size:12px; color:#888; text-align:center; margin-top:16px;">送信ボタンを押すとメールアプリが起動し、入力内容が自動的に本文に入ります。<br>そのまま送信するだけで完了です。メールアプリが起動しない場合は直接 <a href="mailto:kaito.k0626@gmail.com">kaito.k0626@gmail.com</a> 宛にご連絡ください。</p>
             </form>
+            <script>
+                function sendApplication(e) {
+                    e.preventDefault();
+                    const f = e.target;
+                    const body = [
+                        '【FRENVOX モニター応募】',
+                        '',
+                        'お名前：' + f.name.value,
+                        'メール：' + f.email.value,
+                        '施設名・法人名：' + f.company.value,
+                        '施設種別：' + f.type.value,
+                        '電話番号：' + (f.tel.value || '（未記入）'),
+                        '',
+                        '【ご相談内容・現場の課題】',
+                        f.message.value,
+                        '',
+                        '---',
+                        'このメールはFRENVOXサイトの応募フォームから自動生成されました。'
+                    ].join('\n');
+                    const subject = '【FRENVOX モニター応募】' + f.company.value + '／' + f.name.value;
+                    location.href = 'mailto:kaito.k0626@gmail.com?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+                    return false;
+                }
+            </script>
         </div>
     </section>
 
