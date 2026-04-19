@@ -3,14 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FRENVOX | 理学療法士 × AI</title>
-    <meta name="description" content="理学療法士の臨床経験とAI技術で、リハビリ・医療・介護の現場を変える。動作解析AI、記録業務の自動化、ホームページ制作。香川県高松市。">
+    <title>FRENVOX | 記録業務AI 3ヶ月無料モニター募集｜高松市のデイサービス・デイケア・訪問リハ向け</title>
+    <meta name="description" content="香川県高松市のデイサービス・デイケア・訪問リハ事業所さま向け、記録業務AIを3ヶ月無料でお試しいただけるモニター施設を1施設募集。理学療法士が開発、国内サーバーで安全運用。">
+    <meta property="og:title" content="記録業務AI 3ヶ月無料モニター募集｜FRENVOX">
+    <meta property="og:description" content="高松市のデイサービス・デイケア・訪問リハ事業所さま、先着1施設。理学療法士が開発した記録AIを3ヶ月無料で。">
+    <meta property="og:type" content="website">
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        /* Monitor banner (top) */
+        .monitor-bar { background:#c8a24e; color:#111; padding:10px 20px; text-align:center; font-size:14px; font-weight:500; position:relative; z-index:101; }
+        .monitor-bar strong { font-weight:700; }
+        .monitor-bar a { color:#111; text-decoration:underline; margin-left:8px; }
+
+        /* Monitor section */
+        .monitor { background:linear-gradient(135deg, #c8a24e 0%, #b08d3f 100%); color:#111; padding:80px 0; }
+        .monitor .container { max-width:900px; }
+        .monitor-tag { display:inline-block; background:#111; color:#c8a24e; padding:6px 16px; border-radius:4px; font-size:13px; letter-spacing:0.1em; font-weight:700; margin-bottom:20px; }
+        .monitor-title { font-size:clamp(28px,5vw,44px); font-weight:900; line-height:1.3; margin:0 0 24px; }
+        .monitor-lead { font-size:17px; line-height:1.8; margin:0 0 36px; }
+        .monitor-box { background:#fff; border-radius:8px; padding:32px; margin-bottom:32px; box-shadow:0 8px 32px rgba(0,0,0,0.15); }
+        .monitor-box h3 { font-size:18px; font-weight:700; margin:0 0 20px; padding-bottom:12px; border-bottom:2px solid #c8a24e; }
+        .monitor-list { list-style:none; padding:0; margin:0; }
+        .monitor-list li { display:grid; grid-template-columns:120px 1fr; gap:16px; padding:12px 0; border-bottom:1px solid #eee; font-size:15px; }
+        .monitor-list li:last-child { border-bottom:none; }
+        .monitor-list li strong { color:#8a6d2f; font-weight:700; }
+        .monitor-price { display:flex; align-items:baseline; gap:16px; flex-wrap:wrap; margin:24px 0; padding:20px; background:#fff8e8; border-radius:6px; }
+        .monitor-price .old { text-decoration:line-through; color:#999; font-size:18px; }
+        .monitor-price .new { font-size:32px; font-weight:900; color:#111; }
+        .monitor-price .note { font-size:13px; color:#555; }
+        .monitor-actions { display:flex; gap:16px; flex-wrap:wrap; margin-top:32px; }
+        .btn-primary { background:#111; color:#c8a24e; padding:18px 32px; border-radius:4px; font-weight:700; text-decoration:none; display:inline-block; transition:transform 0.2s; font-size:16px; }
+        .btn-primary:hover { transform:translateY(-2px); }
+        .btn-phone { background:#fff; color:#111; padding:18px 32px; border-radius:4px; font-weight:700; text-decoration:none; display:inline-block; border:2px solid #111; font-size:16px; }
+        .btn-phone small { display:block; font-size:11px; font-weight:400; margin-top:2px; }
+        .remaining { display:inline-block; background:#d94444; color:#fff; padding:4px 12px; border-radius:100px; font-size:12px; font-weight:700; margin-left:12px; vertical-align:middle; }
+
+        @media (max-width:600px) {
+            .monitor-list li { grid-template-columns:1fr; gap:4px; }
+            .monitor-list li strong { font-size:13px; }
+        }
+    </style>
 </head>
 <body>
+
+    <div class="monitor-bar">
+        <strong>【先着1施設・残り1枠】</strong>記録業務AI 3ヶ月無料モニター募集中
+        <a href="#monitor">詳細を見る →</a>
+    </div>
 
     <nav class="nav" id="nav">
         <div class="nav-inner">
@@ -19,11 +61,11 @@
                 <span></span><span></span><span></span>
             </button>
             <ul class="nav-menu" id="navMenu">
-                <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#results" class="nav-link">効果</a></li>
-                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#monitor" class="nav-link">モニター募集</a></li>
+                <li><a href="#about" class="nav-link">開発者</a></li>
+                <li><a href="#flow" class="nav-link">流れ</a></li>
                 <li><a href="#faq" class="nav-link">FAQ</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><a href="#contact" class="nav-link">申込</a></li>
             </ul>
         </div>
     </nav>
@@ -31,12 +73,117 @@
     <!-- Hero -->
     <section class="hero" id="hero">
         <div class="hero-inner">
-            <p class="hero-tag">Physical Therapist &times; AI Engineer</p>
-            <h1 class="hero-title">記録に追われる時間を、<br>患者と向き合う時間に。</h1>
-            <p class="hero-lead">スマホ2台で動作解析。記録業務をAIが自動化。<br>理学療法士が開発した、現場のためのAIソリューション。</p>
+            <p class="hero-tag">香川県高松市・リハビリ事業所さま向け</p>
+            <h1 class="hero-title">記録業務を、<br>月20時間削減する。</h1>
+            <p class="hero-lead">デイサービス・デイケア・訪問リハ事業所さまへ。<br>理学療法士が開発した記録AIを、<strong>3ヶ月間無料</strong>でお試しいただけます。</p>
             <div class="hero-actions">
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLScgxARbDTnTb6Z-cD3skANFIr3jfzXzVDz6nyi-yZzeD7qvhQ/viewform" target="_blank" rel="noopener noreferrer" class="btn btn-fill">無料相談を予約する（30分）</a>
-                <a href="#results" class="btn">導入効果を見る</a>
+                <a href="#monitor" class="btn btn-fill">モニター募集の詳細を見る</a>
+                <a href="tel:08043432366" class="btn">電話で相談する</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Monitor 募集（最重要セクション） -->
+    <section class="monitor" id="monitor">
+        <div class="container">
+            <span class="monitor-tag">MONITOR 2026</span>
+            <h2 class="monitor-title">3ヶ月無料モニター施設を<br>1施設だけ募集します<span class="remaining">残り1枠</span></h2>
+            <p class="monitor-lead">FRENVOXは、理学療法士が現場の「記録業務の重さ」を解決するために開発したAIツールです。<br>最初の導入施設として、一緒にツールを磨いてくださる事業所さまを高松市内から1施設だけ募集します。</p>
+
+            <div class="monitor-box">
+                <h3>募集要項</h3>
+                <ul class="monitor-list">
+                    <li><strong>対象</strong><span>香川県高松市内の<br>デイサービス・デイケア・通所リハ・訪問リハ事業所</span></li>
+                    <li><strong>募集施設数</strong><span>1施設（先着順）</span></li>
+                    <li><strong>期間</strong><span>2026年5月〜7月（3ヶ月間）</span></li>
+                    <li><strong>対応範囲</strong><span>訪問記録・日報・ケア計画書のAI下書き自動生成／既存のiPad・PCで利用可／現場スタッフ向け操作研修込み</span></li>
+                    <li><strong>ご協力事項</strong><span>①月1回30分のヒアリング<br>②導入3ヶ月後、事例としてサイト掲載のご許可（施設名の匿名化も可）</span></li>
+                    <li><strong>ご負担</strong><span>なし（通信費・機材費もFRENVOX側で負担）</span></li>
+                </ul>
+                <div class="monitor-price">
+                    <span class="old">通常 初期50,000円＋月額15,000円×3 ＝ 95,000円</span>
+                    <span class="new">→ 0円</span>
+                    <span class="note">3ヶ月終了後の継続は任意。終了も自由です。</span>
+                </div>
+            </div>
+
+            <p class="monitor-lead" style="font-size:15px;"><strong>なぜ無料なのか？</strong><br>最初の導入事例を作ることが、FRENVOXにとって何より価値があるからです。実地で磨かれていないツールを有料で売るつもりはありません。使っていただき、改善し、事例化する——ここまで含めてこの3ヶ月です。</p>
+
+            <div class="monitor-actions">
+                <a href="#contact" class="btn-primary">モニターに応募する</a>
+                <a href="tel:08043432366" class="btn-phone">電話で相談する<small>080-4343-2366（平日9-19時）</small></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 解決できること -->
+    <section class="section section-dark" id="results">
+        <div class="container">
+            <p class="tag tag-center">What Changes</p>
+            <h2 class="section-title section-title-center">解決したいのは、この4つです</h2>
+            <p class="section-lead">リハ現場の「記録の重さ」を、AIが裏で処理する想定です。<br>数値は開発時の試算。実施設での検証を、このモニターで行います。</p>
+
+            <div class="results-grid">
+                <div class="result-card fade-in">
+                    <p class="result-label">訪問記録</p>
+                    <div class="result-compare">
+                        <div class="result-before">
+                            <span class="result-num">2時間</span>
+                            <span class="result-unit">/日</span>
+                        </div>
+                        <span class="result-arrow">→</span>
+                        <div class="result-after">
+                            <span class="result-num">30分</span>
+                            <span class="result-unit">/日（想定）</span>
+                        </div>
+                    </div>
+                    <p class="result-note">訪問メモの音声や手書きをAIが整形。確認して送信するだけ。</p>
+                </div>
+                <div class="result-card fade-in">
+                    <p class="result-label">ケア計画書</p>
+                    <div class="result-compare">
+                        <div class="result-before">
+                            <span class="result-num">30分</span>
+                            <span class="result-unit">/件</span>
+                        </div>
+                        <span class="result-arrow">→</span>
+                        <div class="result-after">
+                            <span class="result-num">5分</span>
+                            <span class="result-unit">/件（想定）</span>
+                        </div>
+                    </div>
+                    <p class="result-note">過去の記録を学習して、ケア計画書の下書きを即時生成。</p>
+                </div>
+                <div class="result-card fade-in">
+                    <p class="result-label">日報・申し送り</p>
+                    <div class="result-compare">
+                        <div class="result-before">
+                            <span class="result-num">手書き</span>
+                            <span class="result-unit">中心</span>
+                        </div>
+                        <span class="result-arrow">→</span>
+                        <div class="result-after">
+                            <span class="result-num">音声</span>
+                            <span class="result-unit">→自動整形</span>
+                        </div>
+                    </div>
+                    <p class="result-note">移動中の音声メモからAIが日報を自動生成。移動時間を記録時間に。</p>
+                </div>
+                <div class="result-card fade-in">
+                    <p class="result-label">残業・持ち帰り</p>
+                    <div class="result-compare">
+                        <div class="result-before">
+                            <span class="result-num">月20h</span>
+                            <span class="result-unit">超</span>
+                        </div>
+                        <span class="result-arrow">→</span>
+                        <div class="result-after">
+                            <span class="result-num">大幅</span>
+                            <span class="result-unit">削減（想定）</span>
+                        </div>
+                    </div>
+                    <p class="result-note">事務作業の大半をAIに移行。スタッフの負担を根本から軽くする設計。</p>
+                </div>
             </div>
         </div>
     </section>
@@ -49,150 +196,20 @@
                     <img src="images/profile.png" alt="桑島 海斗" width="400" height="400" loading="lazy">
                 </div>
                 <div class="about-body fade-in">
-                    <p class="tag">About</p>
+                    <p class="tag">About / 開発者</p>
                     <h2 class="about-name">桑島 海斗</h2>
                     <p class="about-name-en">Kaito Kuwajima</p>
                     <p class="about-role">理学療法士 / AI Engineer</p>
                     <div class="about-text">
-                        <p>理学療法士として数多くのリハビリ現場で患者と向き合ってきました。「もっと患者に向き合う時間がほしい」——現場の切実な声を、技術の力で解決したい。そう思い、AI開発の世界に飛び込みました。</p>
-                        <p>臨床経験と技術力、両方を持つからこそ、現場に本当にフィットするソリューションを届けられると確信しています。</p>
+                        <p>理学療法士としてリハビリ現場で働いてきた中で、いちばん辛かったのは「記録」でした。患者と向き合った時間のあとに、書類とカルテが待っている。スタッフが疲弊していく姿を見て、AIで解決したいと思い開発を始めました。</p>
+                        <p>FRENVOXはまだ世に出たばかりのツールです。だからこそ、最初の1施設で実地検証させてください。3ヶ月後には、事例としてお渡しできる価値があるものに仕上げます。</p>
                     </div>
                     <div class="about-credentials">
-                        <span>学会発表実績あり</span>
-                        <span>リハビリ×AI特化</span>
+                        <span>理学療法士</span>
+                        <span>動作解析 学会発表経験</span>
+                        <span>高松市在住・対面対応可</span>
                     </div>
                     <p class="about-sig">FRENVOX 代表 / 香川県高松市</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Results / Before-After -->
-    <section class="section section-dark" id="results">
-        <div class="container">
-            <p class="tag tag-center">Results</p>
-            <h2 class="section-title section-title-center">AIで何が変わるのか</h2>
-            <p class="section-lead">導入前と導入後で、現場はこう変わります。</p>
-
-            <div class="results-grid">
-                <div class="result-card fade-in">
-                    <p class="result-label">記録業務</p>
-                    <div class="result-compare">
-                        <div class="result-before">
-                            <span class="result-num">2時間</span>
-                            <span class="result-unit">/日</span>
-                        </div>
-                        <span class="result-arrow">→</span>
-                        <div class="result-after">
-                            <span class="result-num">30分</span>
-                            <span class="result-unit">/日</span>
-                        </div>
-                    </div>
-                    <p class="result-note">訪問記録・日報をAIが自動下書き。確認して送信するだけ。</p>
-                </div>
-                <div class="result-card fade-in">
-                    <p class="result-label">書類作成</p>
-                    <div class="result-compare">
-                        <div class="result-before">
-                            <span class="result-num">30分</span>
-                            <span class="result-unit">/件</span>
-                        </div>
-                        <span class="result-arrow">→</span>
-                        <div class="result-after">
-                            <span class="result-num">5分</span>
-                            <span class="result-unit">/件</span>
-                        </div>
-                    </div>
-                    <p class="result-note">ケア計画書・報告書のドラフトをAIが即時生成。</p>
-                </div>
-                <div class="result-card fade-in">
-                    <p class="result-label">動作評価</p>
-                    <div class="result-compare">
-                        <div class="result-before">
-                            <span class="result-num">主観</span>
-                            <span class="result-unit">評価</span>
-                        </div>
-                        <span class="result-arrow">→</span>
-                        <div class="result-after">
-                            <span class="result-num">数値</span>
-                            <span class="result-unit">データ</span>
-                        </div>
-                    </div>
-                    <p class="result-note">スマホ2台で関節可動域・筋力を客観的に計測。経過も自動記録。</p>
-                </div>
-                <div class="result-card fade-in">
-                    <p class="result-label">残業時間</p>
-                    <div class="result-compare">
-                        <div class="result-before">
-                            <span class="result-num">月20h</span>
-                            <span class="result-unit">超</span>
-                        </div>
-                        <span class="result-arrow">→</span>
-                        <div class="result-after">
-                            <span class="result-num">ほぼ</span>
-                            <span class="result-unit">ゼロ</span>
-                        </div>
-                    </div>
-                    <p class="result-note">事務作業の大半をAIに移行。スタッフの負担を根本から解消。</p>
-                </div>
-            </div>
-
-            <div class="results-cta fade-in">
-                <p>「うちの施設ではどれくらい変わる？」</p>
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLScgxARbDTnTb6Z-cD3skANFIr3jfzXzVDz6nyi-yZzeD7qvhQ/viewform" target="_blank" rel="noopener noreferrer" class="btn btn-fill">無料で相談してみる</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Services -->
-    <section class="section" id="services">
-        <div class="container">
-            <p class="tag">Services</p>
-            <h2 class="section-title">事業内容</h2>
-
-            <div class="service-featured fade-in">
-                <div class="service-featured-img">
-                    <img src="images/rehab-session.jpg" alt="リハビリテーション" loading="lazy">
-                </div>
-                <div class="service-featured-body">
-                    <p class="service-cat">リハビリ施設・医療機関向け</p>
-                    <h3>リハビリ &times; AI ソリューション</h3>
-                    <p>理学療法士の臨床知識をベースに、リハビリ現場に特化したAIツールを開発。スマートフォン2台だけで高精度な動作解析を実現し、特別な機材は一切不要です。</p>
-                    <ul>
-                        <li>歩行中・動作中の関節可動域（ROM）および筋力を定量測定</li>
-                        <li>学会発表済みの技術がベース——エビデンスのあるアプローチ</li>
-                        <li>リハビリ記録の自動生成・評価データの可視化・経過レポート出力</li>
-                        <li>導入レクチャー・操作研修・セキュリティ対策まで一貫サポート</li>
-                        <li>患者データは暗号化通信＋国内サーバーで安全に管理</li>
-                    </ul>
-                    <div class="service-price">要相談 <span>/ 施設の規模・要件による</span></div>
-                    <p class="service-subsidy">IT導入補助金の活用で、最大75%の費用補助を受けられる場合があります。</p>
-                    <a href="https://docs.google.com/forms/d/e/1FAIpQLScgxARbDTnTb6Z-cD3skANFIr3jfzXzVDz6nyi-yZzeD7qvhQ/viewform" target="_blank" rel="noopener noreferrer" class="btn">このサービスを相談する</a>
-                </div>
-            </div>
-
-            <div class="service-grid">
-                <div class="service-item fade-in">
-                    <p class="service-cat">訪問看護・介護施設向け</p>
-                    <h3>医療・介護 AI 導入支援</h3>
-                    <p>訪問記録・日報・ケア計画書の自動下書きなど、記録業務をAIで半減。既存のiPad・PCにそのまま導入でき、新しい機材は不要です。</p>
-                    <div class="service-price">初期 50,000円〜 <span>/ 月額 15,000円〜</span></div>
-                    <p class="service-subsidy">IT導入補助金の対象となる場合があります。</p>
-                    <a href="https://docs.google.com/forms/d/e/1FAIpQLScgxARbDTnTb6Z-cD3skANFIr3jfzXzVDz6nyi-yZzeD7qvhQ/viewform" target="_blank" rel="noopener noreferrer" class="link-arrow">相談する</a>
-                </div>
-                <div class="service-item fade-in">
-                    <p class="service-cat">店舗・事業所・クリニック向け</p>
-                    <h3>ホームページ制作</h3>
-                    <p>集客に特化したレスポンシブ対応のWebサイトを制作。SEO対策済み、スマホ完全対応。医療・介護業界の制作知見を活かした信頼感のあるデザイン。</p>
-                    <div class="service-price">150,000円〜 <span>/ ページ数・仕様による</span></div>
-                    <a href="https://docs.google.com/forms/d/e/1FAIpQLScgxARbDTnTb6Z-cD3skANFIr3jfzXzVDz6nyi-yZzeD7qvhQ/viewform" target="_blank" rel="noopener noreferrer" class="link-arrow">相談する</a>
-                </div>
-                <div class="service-item service-item-free fade-in">
-                    <p class="service-cat">はじめての方へ</p>
-                    <h3>無料 AI 相談（30分）</h3>
-                    <p>AI導入の進め方、ツールの選び方、セキュリティの不安——あらゆるご相談を30分無料でお受けします。「何から始めたらいいか分からない」でも大丈夫です。</p>
-                    <div class="service-price">無料 <span>/ 30分・オンライン</span></div>
-                    <a href="https://docs.google.com/forms/d/e/1FAIpQLScgxARbDTnTb6Z-cD3skANFIr3jfzXzVDz6nyi-yZzeD7qvhQ/viewform" target="_blank" rel="noopener noreferrer" class="link-arrow">Googleフォームで予約する</a>
                 </div>
             </div>
         </div>
@@ -202,80 +219,42 @@
     <section class="section section-dark" id="flow">
         <div class="container">
             <p class="tag tag-center">Flow</p>
-            <h2 class="section-title section-title-center">導入の流れ</h2>
-            <p class="section-lead">お問い合わせから導入まで、すべてオンラインで完結できます。</p>
+            <h2 class="section-title section-title-center">モニター導入の流れ</h2>
+            <p class="section-lead">お申込みから運用開始まで、最短2週間です。</p>
             <div class="flow-list">
                 <div class="flow-step fade-in">
                     <span class="flow-num">01</span>
                     <div class="flow-body">
-                        <h3>無料相談（30分）</h3>
-                        <p>現場の課題やご要望をヒアリング。AIで解決できるかどうかをその場でお伝えします。Googleフォームからご予約ください。</p>
+                        <h3>お申込み・ご相談</h3>
+                        <p>ページ下部のフォームまたはお電話（080-4343-2366）から。まずは現場の課題を30分ヒアリングします。</p>
                     </div>
                 </div>
                 <div class="flow-step fade-in">
                     <span class="flow-num">02</span>
                     <div class="flow-body">
-                        <h3>現場ヒアリング・プラン提案</h3>
-                        <p>業務フローを詳しく把握した上で、最適なAI導入プランとお見積もりをご提案。補助金の活用可否もこの段階で確認します。</p>
+                        <h3>現場訪問・詳細ヒアリング</h3>
+                        <p>高松市内、こちらから直接お伺いします。現在の記録業務のフロー、使っているiPad・PCを確認し、AI導入の設計をご提案します。</p>
                     </div>
                 </div>
                 <div class="flow-step fade-in">
                     <span class="flow-num">03</span>
                     <div class="flow-body">
-                        <h3>開発・構築</h3>
-                        <p>現場のワークフローに合わせてシステムを構築。途中経過を共有しながら進めるので、「思っていたのと違う」がありません。</p>
+                        <h3>セットアップ・操作研修</h3>
+                        <p>既存の端末にツールをセットアップ。スタッフ全員への操作研修とマニュアル提供まで対応します。ITに不慣れな方でも大丈夫です。</p>
                     </div>
                 </div>
                 <div class="flow-step fade-in">
                     <span class="flow-num">04</span>
                     <div class="flow-body">
-                        <h3>導入・研修</h3>
-                        <p>スタッフへの操作研修と運用マニュアルを提供。ITに不慣れな方でも使えるよう、理学療法士の視点で丁寧にレクチャーします。</p>
+                        <h3>3ヶ月間の運用</h3>
+                        <p>月1回30分、現場へ伺ってヒアリング。改善要望はその場で吸い上げ、ツールを施設に合わせて磨き込みます。</p>
                     </div>
                 </div>
                 <div class="flow-step fade-in">
                     <span class="flow-num">05</span>
                     <div class="flow-body">
-                        <h3>運用サポート</h3>
-                        <p>導入後も月額サポートで継続フォロー。不具合対応、機能追加のご相談、データ分析レポートの提供まで対応します。</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Why -->
-    <section class="section" id="why">
-        <div class="container">
-            <p class="tag tag-center">Why FRENVOX</p>
-            <h2 class="section-title section-title-center">選ばれる理由</h2>
-            <div class="why-list">
-                <div class="why-item fade-in">
-                    <span class="why-num">01</span>
-                    <div class="why-body">
-                        <h3>理学療法士が開発している</h3>
-                        <p>リハビリの現場を知っている人間が設計するから、現場で本当に使えるものが出来上がります。「技術はすごいけど使えない」がありません。</p>
-                    </div>
-                </div>
-                <div class="why-item fade-in">
-                    <span class="why-num">02</span>
-                    <div class="why-body">
-                        <h3>学会発表済みの技術がベース</h3>
-                        <p>動作解析技術は学会でも発表済み。エビデンスに基づいた信頼性の高いアプローチで、施設の説明責任にも応えます。</p>
-                    </div>
-                </div>
-                <div class="why-item fade-in">
-                    <span class="why-num">03</span>
-                    <div class="why-body">
-                        <h3>導入から定着まで伴走</h3>
-                        <p>ツールを渡して終わりではなく、スタッフ研修から運用サポートまで一気通貫。「導入したけど使われなくなった」を防ぎます。</p>
-                    </div>
-                </div>
-                <div class="why-item fade-in">
-                    <span class="why-num">04</span>
-                    <div class="why-body">
-                        <h3>補助金で費用を大幅に軽減</h3>
-                        <p>IT導入補助金を活用すれば、最大75%の費用補助を受けられる場合があります。申請サポートも無料で対応します。</p>
+                        <h3>継続 or 終了（自由選択）</h3>
+                        <p>3ヶ月後、継続をご希望であれば通常価格（月額15,000円〜）で。終了もいつでも自由です。事例化のご協力に感謝いたします。</p>
                     </div>
                 </div>
             </div>
@@ -283,74 +262,67 @@
     </section>
 
     <!-- FAQ -->
-    <section class="section section-dark" id="faq">
+    <section class="section" id="faq">
         <div class="container">
             <p class="tag tag-center">FAQ</p>
             <h2 class="section-title section-title-center">よくあるご質問</h2>
             <div class="faq-list">
                 <details class="faq-item fade-in">
-                    <summary>AIの導入費用はどのくらいかかりますか？</summary>
-                    <p>施設の規模や要件によりますが、医療・介護AI導入支援は初期5万円〜、月額1.5万円〜が目安です。IT導入補助金を活用すれば、最大75%の費用補助を受けられるケースもあります。まずは無料相談でお見積もりをお出しします。</p>
+                    <summary>本当に3ヶ月間、完全無料なのですか？</summary>
+                    <p>はい。初期費用・月額費用ともに0円です。通信費や追加機材もFRENVOX側で負担します。3ヶ月後の継続判断は自由で、終了を選んでもペナルティは一切ありません。</p>
+                </details>
+                <details class="faq-item fade-in">
+                    <summary>なぜ無料でやっているのですか？</summary>
+                    <p>FRENVOXにとって「最初の実地事例」を作ることが、何よりの資産になるからです。まだ世に出たばかりのツールを有料で売るより、本気で使っていただいて一緒に磨きたいと考えています。</p>
+                </details>
+                <details class="faq-item fade-in">
+                    <summary>3ヶ月後、継続しない場合のデータはどうなりますか？</summary>
+                    <p>ご希望に応じて、全データをCSV/PDFでエクスポートしてお渡しします。FRENVOX側に残すデータも、ご希望があれば完全削除いたします。</p>
                 </details>
                 <details class="faq-item fade-in">
                     <summary>ITに詳しくないスタッフでも使えますか？</summary>
-                    <p>はい。理学療法士が設計しているので、医療・介護の現場の方が迷わず使えるUIになっています。導入時にはスタッフ向けの操作研修を行い、マニュアルもお渡しします。導入後の質問にも随時対応します。</p>
+                    <p>はい。理学療法士が設計しているので、医療・介護現場の方が迷わず使えるUIになっています。導入時にスタッフ向け研修とマニュアルをお渡しし、導入後も月1回の訪問で質問をお受けします。</p>
                 </details>
                 <details class="faq-item fade-in">
-                    <summary>患者データのセキュリティは大丈夫ですか？</summary>
-                    <p>患者データは暗号化通信（SSL/TLS）で送受信し、国内サーバーで安全に管理します。アクセス権限の設定、操作ログの記録など、医療情報の取り扱いに配慮した設計です。</p>
+                    <summary>利用者データのセキュリティは大丈夫ですか？</summary>
+                    <p>データは暗号化通信（SSL/TLS）で送受信し、国内サーバーで管理します。アクセス権限設定、操作ログ記録など、介護・医療情報の取り扱いに配慮した設計です。施設の個人情報保護規程に合わせた運用もご相談いただけます。</p>
                 </details>
                 <details class="faq-item fade-in">
-                    <summary>動作解析に特別な機材は必要ですか？</summary>
-                    <p>いいえ。お手持ちのスマートフォン2台があれば動作解析を始められます。高額なモーションキャプチャー機材は不要です。普段使っているスマホやiPadで、関節可動域や筋力の定量測定が可能です。</p>
+                    <summary>事例として「施設名」を出すのは抵抗があります</summary>
+                    <p>匿名化も可能です。「高松市内の通所リハA事業所さま（利用者50名規模）」のような形でも問題ありません。数字（削減時間など）だけでの公開も可能です。ご要望に合わせて柔軟に対応します。</p>
                 </details>
                 <details class="faq-item fade-in">
-                    <summary>小規模な施設でも対応してもらえますか？</summary>
-                    <p>もちろんです。個人事業ならではの柔軟さで、大規模法人から個人クリニックまで対応しています。小さく始めて段階的に拡張することもできます。</p>
+                    <summary>個人の訪問リハ事業でも応募できますか？</summary>
+                    <p>はい、歓迎です。規模は問いません。ご利用者10名規模から大きな法人施設まで、高松市内の事業所さまであればすべて対象です。</p>
                 </details>
                 <details class="faq-item fade-in">
-                    <summary>導入までどのくらいの期間がかかりますか？</summary>
-                    <p>シンプルな記録業務のAI化であれば、最短2週間で導入可能です。動作解析AIのカスタマイズ開発は1〜3ヶ月が目安です。お急ぎの場合はご相談ください。</p>
+                    <summary>もし1施設が埋まったあとは？</summary>
+                    <p>キャンセル待ちとして情報をお伝えしておきます。また、モニター期間終了後（2026年8月以降）から、通常プランでの受付を順次開始いたします。</p>
                 </details>
             </div>
         </div>
     </section>
 
-    <!-- YouTube -->
-    <section class="section" id="youtube">
-        <div class="container">
-            <p class="tag tag-center">YouTube</p>
-            <h2 class="section-title section-title-center">情報発信</h2>
-            <div class="youtube-wrap fade-in">
-                <a href="https://youtube.com/channel/UCRaF0SzZ-9pcbwL2-Ha8uhw?si=--FiWrBruBXHMgnN" target="_blank" rel="noopener noreferrer" class="youtube-thumb">
-                    <img src="images/youtube-thumb-1.jpg" alt="YouTubeチャンネル" loading="lazy">
-                    <div class="youtube-play">
-                        <svg viewBox="0 0 24 24" fill="currentColor" width="32" height="32"><path d="M8 5v14l11-7z"/></svg>
-                    </div>
-                </a>
-                <p class="youtube-desc">AI活用やリハビリ×テクノロジーに関する情報をYouTubeで発信しています。</p>
-                <a href="https://youtube.com/channel/UCRaF0SzZ-9pcbwL2-Ha8uhw?si=--FiWrBruBXHMgnN" target="_blank" rel="noopener noreferrer" class="link-arrow">チャンネルを見る</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- CTA Banner -->
+    <!-- Final CTA -->
     <section class="cta-banner">
         <div class="container">
-            <h2>まずは30分、無料で相談してみませんか？</h2>
-            <p>AI導入のこと、コストのこと、セキュリティのこと——何でもお気軽にどうぞ。</p>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLScgxARbDTnTb6Z-cD3skANFIr3jfzXzVDz6nyi-yZzeD7qvhQ/viewform" target="_blank" rel="noopener noreferrer" class="btn btn-fill">Googleフォームで無料相談を予約</a>
+            <h2>先着1施設・残り1枠。<br>3ヶ月無料モニターに応募する。</h2>
+            <p>高松市のデイサービス・デイケア・訪問リハ事業所さまへ。<br>迷ったら、まず電話で10分お話しませんか？</p>
+            <div style="display:flex; gap:16px; justify-content:center; flex-wrap:wrap; margin-top:24px;">
+                <a href="#contact" class="btn btn-fill">フォームで応募する</a>
+                <a href="tel:08043432366" class="btn">電話する 080-4343-2366</a>
+            </div>
         </div>
     </section>
 
     <!-- Contact -->
     <section class="section" id="contact">
         <div class="container container-narrow">
-            <p class="tag tag-center">Contact</p>
-            <h2 class="section-title section-title-center">お問い合わせ</h2>
-            <p class="section-lead">サービスに関するご質問やお見積もりのご依頼など、<br>以下のフォームからお気軽にお送りください。</p>
+            <p class="tag tag-center">Application</p>
+            <h2 class="section-title section-title-center">モニター応募フォーム</h2>
+            <p class="section-lead">下記フォームからお申込みください。3営業日以内にご連絡いたします。<br>お急ぎの方はお電話（<a href="tel:08043432366">080-4343-2366</a>）までどうぞ。</p>
             <form class="form" id="contactForm" action="https://formsubmit.co/kaito.k0626@gmail.com" method="POST">
-                <input type="hidden" name="_subject" value="【FRENVOX】新しいお問い合わせ">
+                <input type="hidden" name="_subject" value="【FRENVOX】モニター応募／お問い合わせ">
                 <input type="hidden" name="_captcha" value="false">
                 <input type="hidden" name="_next" value="https://kaitokuwajima.github.io/frenvox/thanks.html">
                 <input type="text" name="_honey" style="display:none">
@@ -364,15 +336,33 @@
                         <input type="email" id="email" name="email" required placeholder="example@email.com">
                     </div>
                 </div>
-                <div class="form-group">
-                    <label for="company">会社名・施設名</label>
-                    <input type="text" id="company" name="company" placeholder="株式会社〇〇 / 〇〇クリニック">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="company">施設名・法人名 <span>*</span></label>
+                        <input type="text" id="company" name="company" required placeholder="〇〇デイサービス / 〇〇病院">
+                    </div>
+                    <div class="form-group">
+                        <label for="type">施設種別 <span>*</span></label>
+                        <select id="type" name="type" required style="width:100%; padding:14px 16px; border:1px solid #ddd; border-radius:4px; font-size:15px; background:#fff;">
+                            <option value="">選択してください</option>
+                            <option>デイサービス</option>
+                            <option>デイケア（通所リハ）</option>
+                            <option>訪問リハビリ</option>
+                            <option>訪問看護</option>
+                            <option>その他</option>
+                        </select>
+                    </div>
                 </div>
                 <div class="form-group">
-                    <label for="message">お問い合わせ内容 <span>*</span></label>
-                    <textarea id="message" name="message" rows="6" required placeholder="ご相談内容をお書きください"></textarea>
+                    <label for="tel">電話番号</label>
+                    <input type="tel" id="tel" name="tel" placeholder="080-0000-0000">
                 </div>
-                <button type="submit" class="btn btn-full">送信する</button>
+                <div class="form-group">
+                    <label for="message">ご相談内容・現場の課題 <span>*</span></label>
+                    <textarea id="message" name="message" rows="6" required placeholder="例）訪問記録に毎日2時間かかっている。スタッフの残業を減らしたい。など"></textarea>
+                </div>
+                <button type="submit" class="btn btn-full">モニターに応募する</button>
+                <p style="font-size:12px; color:#888; text-align:center; margin-top:16px;">送信いただいた内容は、FRENVOX（桑島海斗）のみが閲覧します。営業目的の第三者提供は一切行いません。</p>
             </form>
         </div>
     </section>
@@ -383,12 +373,14 @@
                 <div>
                     <p class="footer-logo">FRENVOX</p>
                     <p class="footer-sub">理学療法士 &times; AI</p>
+                    <p class="footer-sub" style="margin-top:8px; font-size:12px;">香川県高松市<br>080-4343-2366<br>kaito.k0626@gmail.com</p>
                 </div>
                 <nav class="footer-nav">
-                    <a href="#about">About</a>
-                    <a href="#services">Services</a>
+                    <a href="#monitor">モニター募集</a>
+                    <a href="#about">開発者</a>
+                    <a href="#flow">流れ</a>
                     <a href="#faq">FAQ</a>
-                    <a href="#contact">Contact</a>
+                    <a href="#contact">申込</a>
                 </nav>
                 <div class="footer-legal">
                     <a href="legal.html">特定商取引法に基づく表記</a>
@@ -396,7 +388,7 @@
                     <a href="terms.html">利用規約</a>
                 </div>
             </div>
-            <p class="footer-copy">&copy; 2025 FRENVOX</p>
+            <p class="footer-copy">&copy; 2026 FRENVOX</p>
         </div>
     </footer>
 
