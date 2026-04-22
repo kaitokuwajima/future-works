@@ -47,6 +47,35 @@
         .example-card h3 { color:#c8a24e; font-size:17px; margin:0 0 12px; font-weight:700; }
         .example-card p { color:#ddd; font-size:14px; line-height:1.7; margin:0; }
 
+        /* Case Study */
+        .case { background:#f6f3ed; padding:80px 0; }
+        .case .container { max-width:980px; }
+        .case-profile { background:#fff; border-radius:8px; padding:28px 32px; margin:32px 0 48px; box-shadow:0 4px 20px rgba(0,0,0,0.06); }
+        .case-profile h3 { font-size:16px; font-weight:700; margin:0 0 16px; color:#8a6d2f; letter-spacing:0.05em; }
+        .case-profile-list { list-style:none; padding:0; margin:0; display:grid; grid-template-columns:repeat(auto-fit, minmax(240px, 1fr)); gap:12px 32px; }
+        .case-profile-list li { font-size:14px; line-height:1.7; }
+        .case-profile-list li strong { display:block; color:#c8a24e; font-weight:700; font-size:12px; letter-spacing:0.05em; margin-bottom:2px; }
+        .case-sub { font-size:15px; font-weight:700; margin:48px 0 20px; color:#111; letter-spacing:0.05em; border-left:3px solid #c8a24e; padding-left:12px; }
+        .case-features { display:grid; grid-template-columns:repeat(auto-fit, minmax(240px, 1fr)); gap:16px; }
+        .case-feature { background:#fff; padding:24px; border-radius:6px; border:1px solid #e8e3d5; }
+        .case-feature h4 { color:#111; font-size:15px; margin:0 0 10px; font-weight:700; }
+        .case-feature p { color:#555; font-size:13px; line-height:1.7; margin:0; }
+        .case-numbers { display:grid; grid-template-columns:repeat(auto-fit, minmax(260px, 1fr)); gap:20px; }
+        .case-number { background:#fff; padding:24px; border-radius:6px; border:1px solid #e8e3d5; text-align:center; }
+        .case-number .label { font-size:13px; color:#555; margin-bottom:12px; }
+        .case-number .compare { display:flex; align-items:center; justify-content:center; gap:12px; flex-wrap:wrap; }
+        .case-number .before { color:#999; text-decoration:line-through; font-size:18px; font-weight:700; }
+        .case-number .after { color:#c8a24e; font-size:28px; font-weight:900; }
+        .case-number .arrow { color:#ccc; font-size:18px; }
+        .case-gallery { display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:16px; }
+        .case-image { background:#fff; border:1px solid #e8e3d5; border-radius:6px; overflow:hidden; }
+        .case-image img { width:100%; height:auto; display:block; }
+        .case-image-caption { padding:12px 16px; font-size:13px; color:#555; background:#fafaf5; border-top:1px solid #e8e3d5; }
+        .case-image-placeholder { aspect-ratio:16/10; background:#eee6d3; display:flex; align-items:center; justify-content:center; color:#8a6d2f; font-size:13px; font-weight:500; border-radius:6px 6px 0 0; }
+        .case-security { background:#111; color:#ddd; padding:28px 32px; border-radius:8px; margin-top:48px; }
+        .case-security h4 { color:#c8a24e; font-size:15px; margin:0 0 12px; font-weight:700; }
+        .case-security p { font-size:14px; line-height:1.8; margin:0; }
+
         @media (max-width:600px) {
             .monitor-list li { grid-template-columns:1fr; gap:4px; }
             .monitor-list li strong { font-size:13px; }
@@ -68,6 +97,7 @@
             </button>
             <ul class="nav-menu" id="navMenu">
                 <li><a href="#monitor" class="nav-link">モニター募集</a></li>
+                <li><a href="#case" class="nav-link">導入実績</a></li>
                 <li><a href="#examples" class="nav-link">事例</a></li>
                 <li><a href="#about" class="nav-link">代表</a></li>
                 <li><a href="#flow" class="nav-link">流れ</a></li>
@@ -119,6 +149,92 @@
             <div class="monitor-actions">
                 <a href="https://docs.google.com/forms/d/e/1FAIpQLScgxARbDTnTb6Z-cD3skANFIr3jfzXzVDz6nyi-yZzeD7qvhQ/viewform" target="_blank" rel="noopener noreferrer" class="btn-primary">まず30分の無料相談を予約する</a>
                 <a href="tel:08043432366" class="btn-phone">電話で相談する<small>080-4343-2366（6:30-7:30 / 12:30-13:30 / 18:00-18:30）</small></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Case Study（実績紹介）-->
+    <section class="case" id="case">
+        <div class="container">
+            <p class="tag tag-center">Case Study</p>
+            <h2 class="section-title section-title-center">東かがわ市のデイケアで、<br>送迎業務を「5分」に短縮しました</h2>
+            <p class="section-lead">代表・桑島が実際に所属するデイケアで、紙ベースの送迎管理・シフト作成・車両管理を<br>すべて Google Workspace + GASアプリ に置き換えた事例です。</p>
+
+            <div class="case-profile">
+                <h3>施設プロフィール</h3>
+                <ul class="case-profile-list">
+                    <li><strong>施設種別</strong>香川県東かがわ市の病院併設デイケア（施設名非公開）</li>
+                    <li><strong>利用者数</strong>約120名</li>
+                    <li><strong>スタッフ数</strong>21名（理学療法士5 / 看護師3 / 介護・運転手13）</li>
+                    <li><strong>導入ツール</strong>Google Workspace（スプレッドシート）＋ Google Apps Script 独自アプリ</li>
+                </ul>
+            </div>
+
+            <p class="case-sub">何を自動化したか</p>
+            <div class="case-features">
+                <div class="case-feature fade-in">
+                    <h4>① 送迎表の自動生成</h4>
+                    <p>AIに最適ルートを計算させ、全利用者分の送迎表を瞬時に作成。印刷・配布もワンクリックで完了します。</p>
+                </div>
+                <div class="case-feature fade-in">
+                    <h4>② 運転シフトの自動作成</h4>
+                    <p>スタッフの休み希望・早出対応などの条件を反映したシフトを自動生成。毎月のパズル作業から解放されます。</p>
+                </div>
+                <div class="case-feature fade-in">
+                    <h4>③ 車両条件の自動分岐</h4>
+                    <p>「この利用者はA車両のみ乗車可」など、利用者ごとの細かな乗車条件を全入力。AIが自動で適切な配車を判定します。</p>
+                </div>
+                <div class="case-feature fade-in">
+                    <h4>④ 車両管理表の自動記録</h4>
+                    <p>法令で義務付けられた乗降時間・走行距離の記録をワンクリック入力。監査時はスプレッドシートを提示するだけで対応可能です。</p>
+                </div>
+            </div>
+
+            <p class="case-sub">導入による効果</p>
+            <div class="case-numbers">
+                <div class="case-number fade-in">
+                    <div class="label">送迎表の作成時間</div>
+                    <div class="compare">
+                        <span class="before">90分</span>
+                        <span class="arrow">→</span>
+                        <span class="after">5分</span>
+                    </div>
+                </div>
+                <div class="case-number fade-in">
+                    <div class="label">確認作業の時間</div>
+                    <div class="compare">
+                        <span class="before">120分</span>
+                        <span class="arrow">→</span>
+                        <span class="after">2〜3分</span>
+                    </div>
+                </div>
+                <div class="case-number fade-in">
+                    <div class="label">印刷・配布</div>
+                    <div class="compare">
+                        <span class="after" style="font-size:22px;">ワンクリック化</span>
+                    </div>
+                </div>
+            </div>
+
+            <p class="case-sub">実際の画面（一部）</p>
+            <div class="case-gallery">
+                <div class="case-image fade-in">
+                    <div class="case-image-placeholder">送迎表画面（準備中）</div>
+                    <div class="case-image-caption">送迎表の自動生成画面。ルートと時間が自動で割り当てられる。</div>
+                </div>
+                <div class="case-image fade-in">
+                    <div class="case-image-placeholder">シフト作成画面（準備中）</div>
+                    <div class="case-image-caption">休み希望・早出条件を反映したシフトの自動作成画面。</div>
+                </div>
+                <div class="case-image fade-in">
+                    <div class="case-image-placeholder">車両管理画面（準備中）</div>
+                    <div class="case-image-caption">乗降時間・走行距離の記録画面。法定記録にそのまま使える。</div>
+                </div>
+            </div>
+
+            <div class="case-security">
+                <h4>セキュリティについて</h4>
+                <p>本システムはすべて Google Workspace 上で構築されています。Google のような大手クラウド事業者は、個人情報保護法における「クラウドサービス例外」の考え方に該当し、適切な契約のもと医療・介護分野でも広く利用されています。通信はすべて暗号化（SSL/TLS）、利用者ごとのアクセス権限設定により、利用者情報を安全に管理しています。</p>
             </div>
         </div>
     </section>
