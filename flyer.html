@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>FRENVOX チラシ（A4 印刷用）</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+    @page { size: A4; margin: 0; }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; }
+    body {
+        font-family: 'Noto Sans JP', sans-serif;
+        color: #222;
+        background: #e5e5e5;
+        padding: 20px 0;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+    .page {
+        width: 210mm;
+        height: 297mm;
+        margin: 0 auto;
+        background: #fff;
+        position: relative;
+        overflow: hidden;
+        box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+        display: flex;
+        flex-direction: column;
+    }
+    .print-note {
+        max-width: 210mm;
+        margin: 0 auto 16px;
+        padding: 12px 20px;
+        background: #c8a24e;
+        color: #111;
+        font-size: 13px;
+        line-height: 1.7;
+        border-radius: 4px;
+    }
+    .print-note strong { font-weight: 700; }
+
+    /* Hero */
+    .hero {
+        background: #111;
+        color: #fff;
+        padding: 16mm 14mm 12mm;
+        position: relative;
+    }
+    .hero::before {
+        content: '';
+        position: absolute;
+        bottom: 0; left: 0; right: 0;
+        height: 6px;
+        background: #c8a24e;
+    }
+    .brand {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+        margin-bottom: 10mm;
+    }
+    .brand-logo { font-size: 26px; font-weight: 900; letter-spacing: 0.15em; color: #c8a24e; }
+    .brand-sub { font-size: 11px; color: #aaa; letter-spacing: 0.1em; }
+    .hero-title {
+        font-size: 38px;
+        font-weight: 900;
+        line-height: 1.25;
+        margin: 0 0 6mm;
+        letter-spacing: 0.02em;
+    }
+    .hero-title .accent { color: #c8a24e; }
+    .hero-lead {
+        font-size: 13px;
+        line-height: 1.8;
+        color: #ddd;
+        margin: 0;
+    }
+    .hero-lead strong { color: #fff; font-weight: 700; }
+
+    /* Problems */
+    .problems {
+        padding: 10mm 14mm 8mm;
+    }
+    .section-label {
+        display: inline-block;
+        font-size: 10px;
+        font-weight: 700;
+        letter-spacing: 0.2em;
+        color: #8a6d2f;
+        margin-bottom: 4mm;
+    }
+    .section-title {
+        font-size: 18px;
+        font-weight: 900;
+        color: #111;
+        margin: 0 0 6mm;
+        letter-spacing: 0.02em;
+    }
+    .problem-list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 4mm;
+    }
+    .problem-item {
+        background: #faf7ef;
+        border-left: 3px solid #c8a24e;
+        padding: 4mm 4mm;
+    }
+    .problem-item h3 {
+        font-size: 12px;
+        font-weight: 700;
+        color: #111;
+        margin: 0 0 2mm;
+    }
+    .problem-item p {
+        font-size: 10.5px;
+        line-height: 1.7;
+        color: #555;
+        margin: 0;
+    }
+
+    /* Case */
+    .case {
+        background: #111;
+        color: #fff;
+        padding: 8mm 14mm;
+    }
+    .case-head {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        margin-bottom: 5mm;
+    }
+    .case-head .section-label { color: #c8a24e; margin: 0; }
+    .case-head h2 { font-size: 16px; font-weight: 900; margin: 0; color: #fff; }
+    .case-numbers {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 3mm;
+    }
+    .case-num {
+        background: #1c1c1c;
+        border: 1px solid #2a2a2a;
+        padding: 4mm 3mm;
+        text-align: center;
+    }
+    .case-num .label { font-size: 9.5px; color: #aaa; margin-bottom: 2mm; }
+    .case-num .before { font-size: 13px; color: #666; text-decoration: line-through; }
+    .case-num .arrow { font-size: 12px; color: #666; margin: 0 2mm; }
+    .case-num .after { font-size: 18px; color: #c8a24e; font-weight: 900; }
+    .case-num .oneclick { font-size: 14px; color: #c8a24e; font-weight: 900; }
+    .case-foot {
+        margin-top: 3mm;
+        font-size: 10px;
+        color: #aaa;
+        text-align: right;
+    }
+
+    /* Offer */
+    .offer {
+        background: linear-gradient(135deg, #c8a24e 0%, #b08d3f 100%);
+        color: #111;
+        padding: 8mm 14mm 9mm;
+    }
+    .offer-tag {
+        display: inline-block;
+        background: #111;
+        color: #c8a24e;
+        padding: 3px 10px;
+        border-radius: 2px;
+        font-size: 10px;
+        font-weight: 700;
+        letter-spacing: 0.15em;
+        margin-bottom: 3mm;
+    }
+    .offer h2 {
+        font-size: 18px;
+        font-weight: 900;
+        margin: 0 0 4mm;
+        line-height: 1.4;
+    }
+    .offer h2 .remain {
+        display: inline-block;
+        background: #d94444;
+        color: #fff;
+        font-size: 11px;
+        padding: 3px 10px;
+        border-radius: 100px;
+        margin-left: 6px;
+        vertical-align: middle;
+    }
+    .offer-price {
+        background: #fff;
+        border-radius: 4px;
+        padding: 5mm 6mm;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 4mm;
+    }
+    .offer-price-box .head {
+        font-size: 10px;
+        color: #8a6d2f;
+        font-weight: 700;
+        letter-spacing: 0.05em;
+        margin-bottom: 2mm;
+    }
+    .offer-price-box .old {
+        font-size: 11px;
+        color: #999;
+        text-decoration: line-through;
+        display: block;
+        margin-bottom: 1mm;
+    }
+    .offer-price-box .new {
+        font-size: 26px;
+        font-weight: 900;
+        color: #111;
+        line-height: 1;
+    }
+    .offer-price-box .unit { font-size: 11px; color: #555; margin-left: 3px; }
+    .offer-note {
+        font-size: 10.5px;
+        color: #111;
+        margin: 4mm 0 0;
+        line-height: 1.7;
+    }
+
+    /* CTA */
+    .cta {
+        background: #fff;
+        padding: 8mm 14mm;
+        display: grid;
+        grid-template-columns: 38mm 1fr;
+        gap: 6mm;
+        align-items: center;
+        flex: 1;
+    }
+    .qr {
+        width: 38mm;
+        height: 38mm;
+        background: #fff;
+        border: 1px solid #ddd;
+        padding: 2mm;
+    }
+    .qr img { width: 100%; height: 100%; display: block; }
+    .cta-body .label {
+        font-size: 10px;
+        color: #8a6d2f;
+        font-weight: 700;
+        letter-spacing: 0.2em;
+        margin-bottom: 2mm;
+    }
+    .cta-body h2 {
+        font-size: 17px;
+        font-weight: 900;
+        color: #111;
+        margin: 0 0 4mm;
+        line-height: 1.4;
+    }
+    .cta-body .tel {
+        font-size: 20px;
+        font-weight: 900;
+        color: #111;
+        margin: 0 0 1mm;
+        letter-spacing: 0.02em;
+    }
+    .cta-body .tel-time {
+        font-size: 10px;
+        color: #555;
+        margin: 0 0 2mm;
+    }
+    .cta-body .url {
+        font-size: 11px;
+        color: #555;
+        margin: 2mm 0 0;
+        word-break: break-all;
+    }
+
+    /* Footer */
+    .foot {
+        background: #111;
+        color: #888;
+        padding: 4mm 14mm;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 10px;
+    }
+    .foot .rep { color: #fff; font-weight: 700; }
+    .foot .rep-role { color: #c8a24e; margin-left: 6px; }
+
+    @media print {
+        body { background: #fff; padding: 0; }
+        .print-note { display: none; }
+        .page { box-shadow: none; margin: 0; }
+    }
+</style>
+</head>
+<body>
+
+<div class="print-note">
+    <strong>印刷方法：</strong>このページを開いた状態で <strong>Cmd+P（Mac）／ Ctrl+P（Win）</strong> を押し、「<strong>PDFとして保存</strong>」を選択してください。背景色を印刷する設定（オプション → 背景のグラフィック）を ON にしてください。
+</div>
+
+<div class="page">
+    <div class="hero">
+        <div class="brand">
+            <div class="brand-logo">FRENVOX</div>
+            <div class="brand-sub">AI活用支援・業務自動化 / 香川県</div>
+        </div>
+        <h1 class="hero-title">パソコン業務を、<br><span class="accent">ボタンひとつで。</span></h1>
+        <p class="hero-lead">FRENVOXは、<strong>理学療法士が運営する</strong>AI活用支援の会社です。議事録・会議録・送迎管理——既存のAIツールを現場業務に合わせて組み合わせ、「ボタンひとつで終わる」仕組みに変えます。</p>
+    </div>
+
+    <div class="problems">
+        <div class="section-label">WHAT WE DO</div>
+        <h2 class="section-title">こんな業務、ワンクリック化できます。</h2>
+        <div class="problem-list">
+            <div class="problem-item">
+                <h3>議事録・会議録</h3>
+                <p>録音するだけで、議題別・発言者別に整理された議事録が自動生成。サービス担当者会議も対応。</p>
+            </div>
+            <div class="problem-item">
+                <h3>送迎表・シフト作成</h3>
+                <p>利用者条件・スタッフ希望を反映した送迎表とシフトを自動生成。毎月のパズル作業から解放。</p>
+            </div>
+            <div class="problem-item">
+                <h3>訪問記録・ケア計画書</h3>
+                <p>音声メモをAIが整形、過去記録からケア計画書のドラフトを即時生成。持ち帰り残業をなくします。</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="case">
+        <div class="case-head">
+            <div>
+                <div class="section-label">CASE STUDY</div>
+                <h2>東かがわ市デイケアでの導入実績</h2>
+            </div>
+        </div>
+        <div class="case-numbers">
+            <div class="case-num">
+                <div class="label">送迎表の作成時間</div>
+                <span class="before">90分</span><span class="arrow">→</span><span class="after">5分</span>
+            </div>
+            <div class="case-num">
+                <div class="label">確認作業の時間</div>
+                <span class="before">120分</span><span class="arrow">→</span><span class="after">2〜3分</span>
+            </div>
+            <div class="case-num">
+                <div class="label">印刷・配布</div>
+                <div class="oneclick">ワンクリック</div>
+            </div>
+        </div>
+        <div class="case-foot">利用者約120名／スタッフ21名の病院併設デイケアでの実績</div>
+    </div>
+
+    <div class="offer">
+        <span class="offer-tag">FIRST USER PLAN 2026</span>
+        <h2>ファーストユーザー特別プラン<span class="remain">残り1枠</span></h2>
+        <div class="offer-price">
+            <div class="offer-price-box">
+                <div class="head">初期導入（3ヶ月一括）</div>
+                <span class="old">通常 100,000円</span>
+                <span class="new">70,000</span><span class="unit">円（税別）</span>
+            </div>
+            <div class="offer-price-box">
+                <div class="head">4ヶ月目以降 月額</div>
+                <span class="old">通常 30,000円/月</span>
+                <span class="new">20,000</span><span class="unit">円/月（税別）</span>
+            </div>
+        </div>
+        <p class="offer-note">高松市・さぬき市・東かがわ市の <strong>デイサービス／デイケア／訪問リハ</strong> 事業所さま限定。実名での事例掲載にご協力いただける先着1施設。通常プラン比 <strong>30%オフ</strong>、ご契約継続中ずっと適用。</p>
+    </div>
+
+    <div class="cta">
+        <div class="qr">
+            <img src="https://api.qrserver.com/v1/create-qr-code/?size=400x400&margin=0&data=https%3A%2F%2Fkaitokuwajima.github.io%2Ffrenvox%2F" alt="FRENVOX公式サイトQRコード">
+        </div>
+        <div class="cta-body">
+            <div class="label">FREE CONSULTATION</div>
+            <h2>まずは30分の無料相談から。</h2>
+            <p class="tel">☎ 080-4343-2366</p>
+            <p class="tel-time">受付時間：6:30-7:30 ／ 12:30-13:30 ／ 18:00-18:30</p>
+            <p class="url">Web予約・詳細：kaitokuwajima.github.io/frenvox/</p>
+        </div>
+    </div>
+
+    <div class="foot">
+        <div>
+            <span class="rep">代表：桑島 海斗</span><span class="rep-role">理学療法士</span>
+        </div>
+        <div>FRENVOX ／ 香川県高松市 ／ kaito.k0626@gmail.com</div>
+    </div>
+</div>
+
+</body>
+</html>
