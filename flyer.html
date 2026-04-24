@@ -232,50 +232,63 @@
         background: #fff;
         padding: 8mm 14mm;
         display: grid;
-        grid-template-columns: 38mm 1fr;
-        gap: 6mm;
+        grid-template-columns: 30mm 30mm 1fr;
+        gap: 5mm;
         align-items: center;
         flex: 1;
     }
+    .qr-item { display: flex; flex-direction: column; align-items: center; }
     .qr {
-        width: 38mm;
-        height: 38mm;
+        width: 30mm;
+        height: 30mm;
         background: #fff;
         border: 1px solid #ddd;
-        padding: 2mm;
+        padding: 1.5mm;
     }
     .qr img { width: 100%; height: 100%; display: block; }
+    .qr-label {
+        font-size: 10px;
+        font-weight: 700;
+        color: #111;
+        margin-top: 2mm;
+        text-align: center;
+        letter-spacing: 0.05em;
+    }
+    .qr-label small { display: block; font-size: 9px; color: #8a6d2f; font-weight: 700; margin-top: 1mm; letter-spacing: 0.1em; }
+    .cta-body .rep {
+        display: flex;
+        align-items: center;
+        gap: 3mm;
+        margin-bottom: 3mm;
+    }
+    .rep-photo {
+        width: 14mm;
+        height: 14mm;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 2px solid #c8a24e;
+    }
+    .rep-text .name { font-size: 13px; font-weight: 900; color: #111; }
+    .rep-text .role { font-size: 10px; color: #8a6d2f; font-weight: 700; letter-spacing: 0.05em; margin-top: 0.5mm; }
     .cta-body .label {
         font-size: 10px;
         color: #8a6d2f;
         font-weight: 700;
         letter-spacing: 0.2em;
-        margin-bottom: 2mm;
-    }
-    .cta-body h2 {
-        font-size: 17px;
-        font-weight: 900;
-        color: #111;
-        margin: 0 0 4mm;
-        line-height: 1.4;
+        margin: 0 0 2mm;
     }
     .cta-body .tel {
-        font-size: 20px;
+        font-size: 19px;
         font-weight: 900;
         color: #111;
         margin: 0 0 1mm;
         letter-spacing: 0.02em;
     }
     .cta-body .tel-time {
-        font-size: 10px;
+        font-size: 9.5px;
         color: #555;
-        margin: 0 0 2mm;
-    }
-    .cta-body .url {
-        font-size: 11px;
-        color: #555;
-        margin: 2mm 0 0;
-        word-break: break-all;
+        margin: 0;
+        line-height: 1.6;
     }
 
     /* Footer */
@@ -288,8 +301,8 @@
         align-items: center;
         font-size: 10px;
     }
-    .foot .rep { color: #fff; font-weight: 700; }
-    .foot .rep-role { color: #c8a24e; margin-left: 6px; }
+    .foot .rep-ft { color: #fff; font-weight: 700; }
+    .foot .rep-role-ft { color: #c8a24e; margin-left: 6px; }
 
     @media print {
         body { background: #fff; padding: 0; }
@@ -376,23 +389,37 @@
     </div>
 
     <div class="cta">
-        <div class="qr">
-            <img src="https://api.qrserver.com/v1/create-qr-code/?size=400x400&margin=0&data=https%3A%2F%2Fkaitokuwajima.github.io%2Ffrenvox%2F" alt="FRENVOX公式サイトQRコード">
+        <div class="qr-item">
+            <div class="qr">
+                <img src="https://api.qrserver.com/v1/create-qr-code/?size=400x400&margin=0&data=https%3A%2F%2Fkaitokuwajima.github.io%2Ffrenvox%2F" alt="FRENVOX公式サイトQR">
+            </div>
+            <div class="qr-label">ホームページ<small>詳細・事例</small></div>
+        </div>
+        <div class="qr-item">
+            <div class="qr">
+                <img src="https://api.qrserver.com/v1/create-qr-code/?size=400x400&margin=0&data=https%3A%2F%2Fdocs.google.com%2Fforms%2Fd%2Fe%2F1FAIpQLScgxARbDTnTb6Z-cD3skANFIr3jfzXzVDz6nyi-yZzeD7qvhQ%2Fviewform" alt="30分無料相談予約フォームQR">
+            </div>
+            <div class="qr-label">30分無料相談<small>予約フォーム</small></div>
         </div>
         <div class="cta-body">
-            <div class="label">FREE CONSULTATION</div>
-            <h2>まずは30分の無料相談から。</h2>
+            <div class="rep">
+                <img class="rep-photo" src="images/profile.png" alt="桑島海斗">
+                <div class="rep-text">
+                    <div class="name">桑島 海斗</div>
+                    <div class="role">理学療法士 / FRENVOX代表</div>
+                </div>
+            </div>
+            <div class="label">CONTACT</div>
             <p class="tel">☎ 080-4343-2366</p>
-            <p class="tel-time">受付時間：6:30-7:30 ／ 12:30-13:30 ／ 18:00-18:30</p>
-            <p class="url">Web予約・詳細：kaitokuwajima.github.io/frenvox/</p>
+            <p class="tel-time">受付：朝 6:30-7:30 ／ 昼 12:30-13:30<br>　　　夕 18:00-18:30</p>
         </div>
     </div>
 
     <div class="foot">
         <div>
-            <span class="rep">代表：桑島 海斗</span><span class="rep-role">理学療法士</span>
+            <span class="rep-ft">FRENVOX</span><span class="rep-role-ft">パソコン業務をワンクリック化</span>
         </div>
-        <div>FRENVOX ／ 香川県高松市 ／ kaito.k0626@gmail.com</div>
+        <div>香川県高松市 ／ kaito.k0626@gmail.com ／ kaitokuwajima.github.io/frenvox/</div>
     </div>
 </div>
 
