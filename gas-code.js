@@ -1,7 +1,7 @@
 var CALENDAR_ID = 'primary';
 var SLOTS = ['6:00-6:30', '6:30-7:00', '12:30-13:00', '13:00-13:30', '18:00-18:30'];
 var LOOKAHEAD_DAYS = 14;
-var FALLBACK_CHOICE = '上記以外をご希望の方は、お電話（080-4343-2366）またはメール（kaito.k0626@gmail.com）にてご連絡ください';
+var FALLBACK_CHOICE = '上記以外をご希望の方は、お電話（080-4343-2366）またはメール（kaito@frenvox.jp）にてご連絡ください';
 
 function updateSlots() {
   var form = FormApp.getActiveForm();
@@ -86,7 +86,7 @@ function onFormSubmit(e) {
     MailApp.sendEmail({
       to: email,
       subject: '【FRENVOX】ご予約を承りました',
-      body: name + ' 様\n\nご予約ありがとうございます。\n以下の日時でご予約を確定いたしました。\n\n日時: ' + selectedSlot + '\n\nオンライン（Google Meet）でのご相談となります。\n当日のURLは前日までにメールにてお送りいたします。\n\nご不明点がございましたら、お気軽にご連絡ください。\n\nFRENVOX 桑島\nメール: kaito.k0626@gmail.com\n電話: 080-4343-2366'
+      body: name + ' 様\n\nご予約ありがとうございます。\n以下の日時でご予約を確定いたしました。\n\n日時: ' + selectedSlot + '\n\nオンライン（Google Meet）でのご相談となります。\n当日のURLは前日までにメールにてお送りいたします。\n\nご不明点がございましたら、お気軽にご連絡ください。\n\nFRENVOX 桑島\nメール: kaito@frenvox.jp\n電話: 080-4343-2366'
     });
   }
   updateSlots();

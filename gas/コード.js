@@ -9,7 +9,7 @@ var SLOTS = [
 var LOOKAHEAD_DAYS = 14;
 var FALLBACK_CHOICE = '上記以外をご希望の方は'
   + '、お電話（080-4343-2366）または'
-  + 'メール（kaito.k0626@gmail.com）'
+  + 'メール（kaito@frenvox.jp）'
   + 'にてご連絡ください';
 var YOUBI = ['日','月','火','水','木','金','土'];
 
@@ -188,7 +188,7 @@ function onFormSubmit(e) {
         + 'オンライン（Google Meet）です。\n'
         + '当日のURLは前日にお送りします。\n\n'
         + 'FRENVOX 桑島\n'
-        + 'kaito.k0626@gmail.com\n'
+        + 'kaito@frenvox.jp\n'
         + '080-4343-2366'
     });
   }
